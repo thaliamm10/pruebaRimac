@@ -1,6 +1,16 @@
 /*!* Seguro salud Flexible *!*/
 .App {
     position: relative;
+    /*width: 1360px;*/
+    /*height: 768px;*/
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.body {
     width: 1360px;
     height: 768px;
 }
@@ -13,14 +23,88 @@
 
 
 /*!* blur-asset *!*/
+.blur-asset {
 
-/*position: absolute;*/
-/*width: 432px;*/
-/*height: 1088px;*/
-/*right: -432px;*/
-/*top: 996px;*/
 
-/*transform: rotate(-180deg);*/
+    position: relative;
+    backgroundPosition: 'left top';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    objectFit: 'cover'
+
+}
+
+.blur-asset-l {
+    position: absolute;
+    width: 432px;
+    height: 1088px;
+    right: -432px;
+    top: 996px;
+
+    /*transform: rotate(-180deg);*/
+    width: 432px;
+    height: 1088px;
+    flex-shrink: 0;
+}
+
+.left-image {
+    background: url('assets/images/blur-asset-purple.png');
+    background-size: cover;
+    background-position: left top;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-image {
+    background: url('assets/images/blur-asset.png');
+    background-size: cover;
+    background-position: right top;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.background-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.background-image {
+    background: url('assets/images/blur-asset.png');
+    background-size: cover;
+    background-position: right top;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.form-container {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-cotiza {
+    display: flex;
+    width: 336px;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 40px;
+    background: #03050F;
+    color: #FFF;
+}
 
 
 /*!* Rectangle 3463485 *!*/
@@ -40,12 +124,13 @@
 }
 
 /*!* .molecule-blur-asset *!*/
-
-/*position: absolute;*/
-/*left: 172.92%;*/
-/*right: -172.92%;*/
-/*top: 80.33%;*/
-/*bottom: -40.62%;*/
+.molecule-blur-asset {
+    position: absolute;
+    left: 172.92%;
+    right: -172.92%;
+    top: 80.33%;
+    bottom: -40.62%;
+}
 
 /*!* blur/blur-240*/
 
@@ -56,15 +141,15 @@
 
 
 /*!* .atom-blur-asset *!*/
+.atom-blur-asset {
+    position: absolute;
+    left: 84.99%;
+    right: -72.84%;
+    top: 67.99%;
+    bottom: -32.66%;
 
-/*position: absolute;*/
-/*left: 84.99%;*/
-/*right: -72.84%;*/
-/*top: 67.99%;*/
-/*bottom: -32.66%;*/
-
-/*transform: matrix(-1, -0.04, 0.04, -1, 0, 0);*/
-
+    transform: matrix(-1, -0.04, 0.04, -1, 0, 0);
+}
 
 /*!* Ellipse 661 *!*/
 
@@ -250,9 +335,10 @@
 
 /*joy mood*/
 /**!*/
-/*background: #C333FF;*/
-/*transform: matrix(1, 0.04, -0.04, 1, 0, 0);*/
-
+.blur-asset-v {
+    background: #C333FF;
+    transform: matrix(1, 0.04, -0.04, 1, 0, 0);
+}
 
 /*!* Ellipse 663 *!*/
 
@@ -323,35 +409,54 @@
 /**!*/
 /*background: #C333FF;*/
 
+.step-plans {
+    display: flex;
+    width: 100%;
+    padding: 16px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    background: #EDEFFC;
+}
 
 /*!* Frame 1000004350 *!*/
 .frame1000004350 {
     /* Auto layout */
-    display: flex;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
+    /*padding: 0px;*/
+
+    /*position: absolute;*/
+    /*width: 1776px;*/
+    /*height: 808px;*/
+    /*left: 0px;*/
+    /*top: 0px;*/
+
+    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 1776px;
-    height: 808px;
-    left: 0px;
-    top: 0px;
 }
 
 /*!* header *!*/
 
 /*!* Auto layout *!*/
 .hLayer {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*padding: 2px 120px;*/
+    /*gap: 685px;*/
+
+    /*width: 1360px;*/
+    /*height: 64px;*/
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    padding: 2px 120px;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 120px;
-    gap: 685px;
 
-    width: 1360px;
-    height: 64px;
+
 }
 
 
@@ -407,17 +512,20 @@
 /*!* Frame 1000004289 *!*/
 .frame1000004289 {
     /* Auto layout */
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    /*padding: 20px 0px;*/
+    /*gap: 16px;*/
+
+    /*margin: 0 auto;*/
+    /*width: 305px;*/
+    /*height: 60px;*/
+
     display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 20px 0px;
+    align-items: center;
     gap: 16px;
-
-    margin: 0 auto;
-    width: 305px;
-    height: 60px;
-
-
 }
 
 
@@ -436,27 +544,16 @@
 /*!* Subtitle/subtitle-12 *!*/
 .subtitle-12 {
 
-
-    /* title */
-
-    width: 150px;
-    height: 16px;
+    color: #03050F;
+    text-align: right;
 
     /* Subtitle/subtitle-12 */
-    font-family: 'BR Sonoma';
+    font-family: "BR Sonoma";
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    /* identical to box height, or 133% */
-    text-align: right;
+    line-height: 16px; /* 133.333% */
     letter-spacing: 0.2px;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 
 }
 
@@ -470,19 +567,32 @@
 /*flex: none;*/
 /*order: 0;*/
 /*flex-grow: 0;*/
-
+.telephone {
+    width: 20px;
+    height: 20px;
+}
 
 /*!* Text-button *!*/
 .text-button {
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    /*padding: 0px;*/
+    /*gap: 8px;*/
 
-    width: 139px;
-    height: 20px;
+    /*width: 139px;*/
+    /*height: 20px;*/
+    color: #03050F;
+    text-align: right;
+
+    /* Component text/comp-18-bold */
+    font-family: "BR Sonoma";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 0.4px;
 }
 
 /*!* Inside auto layout *!*/
@@ -536,15 +646,15 @@
     /*width: 111px;*/
     /*height: 20px;*/
 
-    /* Component text/comp-18-bold */
-    font-family: 'BR Sonoma';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height, or 111% */
-    text-align: right;
-    letter-spacing: 0.4px;
+    /*!* Component text/comp-18-bold *!*/
+    /*font-family: 'BR Sonoma';*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*font-size: 18px;*/
+    /*line-height: 20px;*/
+    /*!* identical to box height, or 111% *!*/
+    /*text-align: right;*/
+    /*letter-spacing: 0.4px;*/
 
     /*!* Grey/grey-100 *!*/
     /*color: #03050F;*/
@@ -568,21 +678,33 @@
 /*order: 2;*/
 /*flex-grow: 0;*/
 
+.mask-group {
+    /*!*display: flex;*!*/
+    /*padding: 32px 216px 80px 128px;*/
+    /*!*flex-direction: column;*!*/
+    /*!*align-items: flex-start;*!*/
+    /*gap: 24px;*/
+
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+}
 
 /*!* Hero *!*/
 .hero {
     /* Auto layout */
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: flex-start;*/
+    /*padding: 0px;*/
+
+    /*width: 1776px;*/
+    /*height: 744px;*/
+
+    /*flex: none;*/
+    /*order: 1;*/
+    /*flex-grow: 0;*/
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-
-    width: 1776px;
-    height: 744px;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 /*!* Inside auto layout *!*/
@@ -595,15 +717,20 @@
 
 /*!* Auto layout *!*/
 .frame1000004308 {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: flex-start;*/
+    /*padding: 32px 0px 48px 120px;*/
+    /*background: url('assets/images/molecular.png') 50% ; !* Reemplaza con la ruta de tu imagen *!*/
+    /*background-size: cover; !* Puedes ajustar 'cover' según tus necesidades *!*/
+    /*width: 432px;*/
+    /*height: 620px;*/
+    /*top: -63px;*/
+
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 32px 0px 48px 120px;
-    background: url('assets/images/molecular.png') 50% 50%; /* Reemplaza con la ruta de tu imagen */
-    background-size: cover; /* Puedes ajustar 'cover' según tus necesidades */
-    width: 432px;
-    height: 620px;
-    top: -63px;
+    align-items: flex-start;
+
 
 }
 
@@ -1739,14 +1866,31 @@ text, glyph, dark background {
 .frame1000004351 {
 
     /* Auto layout */
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
+    /*padding: 32px 216px 80px 128px;*/
+    /*gap: 24px;*/
+    /*width: 432px;*/
+    /*height: 1088px;*/
+    /*flex-shrink: 0;*/
+    /*width: 696px;*/
+    /*height: 744px;*/
+
+    /*background: url('assets/images/blur-asset.png')  ; !* Reemplaza con la ruta de tu imagen *!*/
+    /*background-size: cover; !* Puedes ajustar 'cover' según tus necesidades *!*/
     display: flex;
+    padding: 30px 33px 80px 51px;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+    gap: 24px;
 
-    width: 352px;
-    height: 168px;
+}
+
+.blr {
+    width: 432px;
+    height: 1088px;
+    flex-shrink: 0;
 
 
 }
@@ -1761,14 +1905,15 @@ text, glyph, dark background {
 
 /*!* Auto layout *!*/
 .frame1000004368 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
+    /*padding: 0px;*/
+    /*gap: 16px;*/
 
+    /*width: 352px;*/
+    /*height: 168px;*/
     width: 352px;
-    height: 168px;
 }
 
 
@@ -1811,8 +1956,6 @@ text, glyph, dark background {
 
 
 }
-
-
 
 
 /* Gradients/Background/aqua-lemon
@@ -1876,18 +2019,25 @@ text, glyph, dark background {
 /*!* Creado para ti y tu familia *!*/
 .txtF {
 
-    width: 352px;
-    height: 80px;
+    /*width: 352px;*/
+    /*height: 80px;*/
 
-    font-family: 'BR Sonoma';
+    /*font-family: 'BR Sonoma';*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*font-size: 32px;*/
+    /*line-height: 40px;*/
+    /*!* or 125% *!*/
+
+    /*!* Grey/grey-100 *!*/
+    /*color: #03050F;*/
+    color: #03050F;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "BR Sonoma";
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    /* or 125% */
-
-    /* Grey/grey-100 */
-    color: #03050F;
+    line-height: 40px; /* 125% */
 }
 
 /*!* Inside auto layout *!*/
@@ -1903,16 +2053,27 @@ text, glyph, dark background {
 
 /*!* Subtitle/subtitle-14 *!*/
 .subtitle-14 {
-    font-family: 'BR Sonoma';
+    /*font-family: 'BR Sonoma';*/
+    /*font-style: normal;*/
+    /*font-weight: 600;*/
+    /*font-size: 14px;*/
+    /*line-height: 20px;*/
+    /*!* or 143% *!*/
+    /*letter-spacing: 0.2px;*/
+
+    /*!* Grey/grey-100 *!*/
+    /*color: #03050F;*/
+    color: #03050F;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Subtitle/subtitle-14 */
+    font-family: "BR Sonoma";
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    /* or 143% */
+    line-height: 20px; /* 142.857% */
     letter-spacing: 0.2px;
 
-    /* Grey/grey-100 */
-    color: #03050F;
 }
 
 /*!* Inside auto layout *!*/
@@ -1932,6 +2093,10 @@ text, glyph, dark background {
 
     /*width: 352px;*/
     /*height: 244px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 /*!* Inside auto layout *!*/
@@ -1942,17 +2107,25 @@ text, glyph, dark background {
 
 /*!* dropdown-textfield *!*/
 .dropdown-textfield {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+    /*!* Auto layout *!*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: flex-start;*/
+    /*padding: 0px;*/
 
-    /* Auto layout */
+    /*width: 352px;*/
+    /*height: 56px;*/
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
+    width: 140px;
+    padding: 16px;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
 
-    width: 352px;
-    height: 56px;
+
 }
+
 /*!* Grey/grey-10*/
 
 /*primary background*/
@@ -2129,25 +2302,43 @@ text, glyph, dark background {
 
 /*!* text-field *!*/
 .text-field {
-    box-sizing: border-box;
-    /* Auto layout */
     display: flex;
-    flex-direction: row;
+    width: 200px;
+    padding: 8px 5px;
     align-items: center;
-    padding: 8px 16px;
     gap: 8px;
 
-    width: 352px;
-    height: 56px;
-    background: #F8F9FF;
+    color: #03050F;
 
-    /* Auto layout */
+    /* Component text/comp-16-regular */
+    font-family: "BR Sonoma";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.input-group {
+    /*display: flex;*/
+    /*align-items: center; !* Para alinear verticalmente el contenido *!*/
+
     display: flex;
-    flex-direction: column;
+    width: 336px;
     align-items: flex-start;
-    padding: 0px;
+
 
 }
+
+.s-text {
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #5E6488;
+    background-color: #F8F9FF;
+}
+
+.text-field, .dropdown-textfield {
+    margin: 0; /* Elimina los márgenes */
+}
+
 /*!* Grey/grey-10*/
 
 /*primary background*/
@@ -2592,40 +2783,47 @@ text, glyph, dark background {
 /*flex: none;*/
 /*order: 2;*/
 /*flex-grow: 0;*/
-
-
-----------FOOTER---------
-    /* Frame 1000004300 */
-.frame1000004300 {
+/**FOOTER**/
+.Frame1000004300 {
     /* Auto layout */
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    padding: 32px 120px;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 120px;
-    gap: 739px;
-
-    position: relative;
-    width: 1360px;
-    height: 106px;
-
+    background-color: #03050F;
+    /*position: relative;*/
+    /*width: 1360px;*/
+    /*height: 106px;*/
+    /*display: flex;*/
+    /*width: 1360px;*/
+    /*padding: 32px 120px;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*display: flex;*/
+    /*justify-content: space-between; !* Esto coloca los elementos en los extremos *!*/
+    /*align-items: center; !* Esto centra verticalmente los elementos *!*/
 
 }
+
+/* Frame 1000004300 */
+
 
 /* Grey/grey-100
 text, glyph, dark background
 */
 .grey-100F {
     background: #03050F;
+
 }
 
 
 /* Logo */
 .logoFooter {
-    margin: 0 auto;
-    width: 85.39px;
-    height: 42px;
 
+    width: 85.388px;
+    height: 42px;
+    flex-shrink: 0;
 
     /*!* Inside auto layout *!*/
     /*flex: none;*/
@@ -2667,22 +2865,31 @@ text, glyph, dark background
 
 
 .layoutF {
-    margin: 0 auto;
-    width: 251px;
-    height: 16px;
+    /*margin: 0 auto;*/
+    /*width: 251px;*/
+    /*height: 16px;*/
 
 }
 
 /*!* Component text/comp-14-regular *!*/
 .comp-14-regular {
-    font-family: 'BR Sonoma';
+    /*font-family: 'BR Sonoma';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*font-size: 14px;*/
+    /*line-height: 16px;*/
+    /*!* identical to box height, or 114% *!*/
+    /*display: flex;*/
+    /*align-items: center;*/
+
+    color: #F8F9FF;
+
+    /* Component text/comp-14-regular */
+    font-family: "BR Sonoma";
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-    display: flex;
-    align-items: center;
+    line-height: 16px; /* 114.286% */
 }
 
 /*!* Grey/grey-10 *!*/
