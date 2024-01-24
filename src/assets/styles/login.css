@@ -1,0 +1,1996 @@
+/*!* Hero *!*/
+
+/*!* Auto layout *!*/
+/*.layout{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: flex-start;*/
+/*    padding: 0px;*/
+
+/*    width: 1776px;*/
+/*    height: 744px;*/
+/*}*/
+
+/*!* Inside auto layout *!*/
+/*insideLayout{*/
+/*flex: none;*/
+/*order: 1;*/
+/*flex-grow: 0;*/
+/*}*/
+
+/*!* Frame 1000004308 *!*/
+
+/*!* Auto layout *!*/
+/*.autoLayout{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: flex-start;*/
+/*    padding: 32px 0px 48px 120px;*/
+
+/*    width: 1080px;*/
+/*    height: 640px;*/
+/*}*/
+
+
+
+/*!* Inside auto layout *!*/
+/*.insideLayout{*/
+/*    flex: none;*/
+/*    order: 0;*/
+/*    flex-grow: 0;*/
+/*}*/
+/*!* Frame 1000004298 *!*/
+
+/*!* Auto layout *!*/
+/*.aLayout{*/
+/*display: flex;*/
+/*flex-direction: row;*/
+/*align-items: flex-start;*/
+/*padding: 0px;*/
+/*gap: 10px;*/
+
+/*width: 480px;*/
+/*height: 560px;*/
+/*}*/
+
+/*!* Inside auto layout *!*/
+/*.insideAutoLayout{*/
+/*flex: none;*/
+/*order: 0;*/
+/*flex-grow: 0;*/
+/*}*/
+
+/*!* Group 1000004294 *!*/
+/*.group1000004294{*/
+/*    width: 480px;*/
+/*    height: 560px;*/
+/*}*/
+
+
+
+/*!* Inside auto layout *!*/
+/*.insideAL{*/
+/*    flex: none;*/
+/*    order: 0;*/
+/*    flex-grow: 0;*/
+/*}*/
+
+
+
+/*!* Mask group *!*/
+/*.maskGroup{*/
+/*    position: absolute;*/
+/*    width: 480px;*/
+/*    height: 560px;*/
+/*    left: 0px;*/
+/*    top: 0px;*/
+/*}*/
+
+
+
+
+/*!* Rectangle 3463891 *!*/
+/*.rectangle3463891{*/
+/*    position: absolute;*/
+/*    width: 480px;*/
+/*    height: 560px;*/
+/*    left: 0px;*/
+/*    top: 0px;*/
+
+/*    background: #D9D9D9;*/
+/*    border-radius: 24px;*/
+
+/*}*/
+
+
+/*!* image 220 *!*/
+/*.image220{*/
+/*    position: absolute;*/
+/*    width: 886px;*/
+/*    height: 590px;*/
+/*    left: 720px;*/
+/*    top: -15px;*/
+
+/*    background: url('image.png');*/
+/*    transform: matrix(-1, 0, 0, 1, 0, 0);*/
+/*}*/
+
+
+
+/*!* Protegemos tu bienestar *!*/
+/*.pB{*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    width: 191px;*/
+/*    height: 16px;*/
+/*    left: -57px;*/
+/*    top: 199px;*/
+
+/*}*/
+
+/*!* Subtitle/subtitle-12-upper *!*/
+/*.subtitle-12-upper{*/
+/*    font-family: 'BR Sonoma';*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    font-size: 12px;*/
+/*    line-height: 16px;*/
+/*    !* identical to box height, or 133% *!*/
+/*    text-align: right;*/
+/*    letter-spacing: 1px;*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+
+/*!* Grey/grey-100 *!*/
+/*.grey-100{*/
+/*    color: #03050F;*/
+/*    transform: rotate(-90deg);*/
+/*}*/
+
+
+
+/*!* Vector *!*/
+/*.vector{*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 5.65%;*/
+/*    right: 91.29%;*/
+/*    top: 104.32%;*/
+/*    bottom: -6.92%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+
+
+/*!* Vector *!*/
+/*.vM{*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 2.23%;*/
+/*    right: 94.52%;*/
+/*    top: 105.4%;*/
+/*    bottom: -8.43%;*/
+
+/*    background: #1D1D1B;*/
+
+/*}*/
+
+
+/*!* Vector *!*/
+/*.vS{*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -0.29%;*/
+/*    right: 98.33%;*/
+/*    top: 106.03%;*/
+/*    bottom: -8.57%;*/
+
+/*    background: #1D1D1B;*/
+
+/*}*/
+
+
+/*!* Vector *!*/
+/*.vSS{*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -1.87%;*/
+/*    right: 100.8%;*/
+/*    top: 105.91%;*/
+/*    bottom: -8.5%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+
+/*!* Vector *!*/
+/*.vSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -5.5%;*/
+/*    right: 102.09%;*/
+/*    top: 105.1%;*/
+/*    bottom: -8.23%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -8.36%;*/
+/*    right: 105%;*/
+/*    top: 103.81%;*/
+/*    bottom: -6.89%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -7.61%;*/
+/*    right: 104.58%;*/
+/*    top: 86.57%;*/
+/*    bottom: 10.81%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -4.37%;*/
+/*    right: 101.14%;*/
+/*    top: 85.13%;*/
+/*    bottom: 11.86%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -0.55%;*/
+/*    right: 98.62%;*/
+/*    top: 85%;*/
+/*    bottom: 12.46%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 1.88%;*/
+/*    right: 97.01%;*/
+/*    top: 85.1%;*/
+/*    bottom: 12.3%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 3.18%;*/
+/*    right: 93.39%;*/
+/*    top: 85.39%;*/
+/*    bottom: 11.46%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 6.07%;*/
+/*    right: 90.56%;*/
+/*    top: 86.77%;*/
+/*    bottom: 10.16%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 10.49%;*/
+/*    right: 86.54%;*/
+/*    top: 91.88%;*/
+/*    bottom: 6.28%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 11.09%;*/
+/*    right: 85.88%;*/
+/*    top: 93.9%;*/
+/*    bottom: 4.08%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 11.25%;*/
+/*    right: 85.71%;*/
+/*    top: 96.51%;*/
+/*    bottom: 1.51%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 12.28%;*/
+/*    right: 86.18%;*/
+/*    top: 99.31%;*/
+/*    bottom: -0.57%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 10.18%;*/
+/*    right: 88.28%;*/
+/*    top: 100.43%;*/
+/*    bottom: -1.7%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 10.82%;*/
+/*    right: 86.81%;*/
+/*    top: 99.16%;*/
+/*    bottom: -1.85%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -12.38%;*/
+/*    right: 109.42%;*/
+/*    top: 100.07%;*/
+/*    bottom: -1.95%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -13.09%;*/
+/*    right: 110.08%;*/
+/*    top: 97.91%;*/
+/*    bottom: 0.06%;*/
+
+/*    background: #1D1D1B;*/
+
+/*}*/
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -13.33%;*/
+/*    right: 110.31%;*/
+/*    top: 95.35%;*/
+/*    bottom: 2.68%;*/
+
+/*    background: #1D1D1B;*/
+
+/*}*/
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -12.94%;*/
+/*    right: 111.41%;*/
+/*    top: 93.27%;*/
+/*    bottom: 5.47%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -10.88%;*/
+/*    right: 109.35%;*/
+/*    top: 92.1%;*/
+/*    bottom: 6.63%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -12.36%;*/
+/*    right: 109.94%;*/
+/*    top: 91.99%;*/
+/*    bottom: 5.36%;*/
+
+/*    background: #1D1D1B;*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -9.39%;*/
+/*    right: 108.57%;*/
+/*    top: 90.41%;*/
+/*    bottom: 8.89%;*/
+
+/*    background: #1D1D1B;*/
+/*    transform: rotate(-65.72deg);*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 9.33%;*/
+/*    right: 89.85%;*/
+/*    top: 90.59%;*/
+/*    bottom: 8.71%;*/
+
+/*    background: #1D1D1B;*/
+/*    transform: rotate(-65.72deg);*/
+
+/*}*/
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: -9.39%;*/
+/*    right: 108.57%;*/
+/*    top: 103.4%;*/
+/*    bottom: -4.1%;*/
+
+/*    background: #1D1D1B;*/
+/*    transform: rotate(-65.72deg);*/
+/*}*/
+
+/*!* Vector *!*/
+/*.vSSSS {*/
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    left: 9.33%;*/
+/*    right: 89.85%;*/
+/*    top: 103.58%;*/
+/*    bottom: -4.28%;*/
+
+/*    background: #1D1D1B;*/
+/*    transform: rotate(-65.72deg);*/
+
+/*}*/
+/*!* flotante *!*/
+
+/*!* Auto layout *!*/
+/*autoLayout {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 10px 10px 10px 20px;*/
+/*    gap: 12px;*/
+
+/*    position: absolute;*/
+/*    visibility: hidden;*/
+/*    width: 210px;*/
+/*    height: 72px;*/
+/*    left: 244px;*/
+/*    top: 304px;*/
+/*}*/
+/*!* Grey/grey-10*/
+
+/*primary background*/
+/**!*/
+/*.primary {*/
+/*    background: #F8F9FF;*/
+/*    border-radius: 0px 100px 100px 28px;*/
+/*}*/
+
+/*!* Frame 1599263 *!*/
+
+/*!* Auto layout *!*/
+/*.Lyt {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
+/*    padding: 0px;*/
+/*    gap: 8px;*/
+
+/*    width: 116px;*/
+/*    height: 40px;*/
+
+/*    transform: rotate(-180deg);*/
+/*}*/
+/*!* Inside auto layout *!*/
+/*iAL{*/
+/*    flex: none;*/
+/*    order: 0;*/
+/*    flex-grow: 0;*/
+/*}*/
+
+
+
+/*!* Paga solo por lo que necesitas *!*/
+/*.pN{*/
+/*width: 116px;*/
+/*height: 40px;*/
+/*}*/
+/*!*!* Title/title-14-bold *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 700;*!*/
+/*!*font-size: 14px;*!*/
+/*!*line-height: 20px;*!*/
+/*!*!* or 143% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: center;*!*/
+/*!*letter-spacing: 0.2px;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Group 1598531 *!*!*/
+
+/*!*width: 52px;*!*/
+/*!*height: 52px;*!*/
+
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Rectangle 3302 *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*width: 52px;*!*/
+/*!*height: 52px;*!*/
+/*!*left: 200px;*!*/
+/*!*top: 10px;*!*/
+
+/*!*background: #C4C4C4;*!*/
+/*!*border-radius: 286px;*!*/
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+
+/*!*!* shutterstock_2142690895 1 *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*width: 167px;*!*/
+/*!*height: 112px;*!*/
+/*!*left: 285px;*!*/
+/*!*top: -2px;*!*/
+
+/*!*background: url(shutterstock_2142690895-2.jpg);*!*/
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+
+/*!*!* +20-hombre-laptop-feliz-casa-usuario *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 128.57%;*!*/
+/*!*right: -110%;*!*/
+/*!*top: -9.72%;*!*/
+/*!*bottom: -51.39%;*!*/
+
+/*!*background: url(+20-hombre-laptop-feliz-casa-usuario.jpg);*!*/
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+
+/*!*!* Frame 1000004299 *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 10px;*!*/
+
+/*!*width: 480px;*!*/
+/*!*height: 560px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Group 1000004294 *!*!*/
+
+/*!*width: 480px;*!*/
+/*!*height: 560px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Mask group *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*width: 480px;*!*/
+/*!*height: 560px;*!*/
+/*!*left: 0px;*!*/
+/*!*top: 0px;*!*/
+
+
+
+/*!*!* Rectangle 3463891 *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*width: 480px;*!*/
+/*!*height: 560px;*!*/
+/*!*left: 0px;*!*/
+/*!*top: 0px;*!*/
+
+/*!*background: #D9D9D9;*!*/
+/*!*border-radius: 24px;*!*/
+
+
+/*!*!* image 220 *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*width: 886px;*!*/
+/*!*height: 590px;*!*/
+/*!*left: 720px;*!*/
+/*!*top: -15px;*!*/
+
+/*!*background: url(image.png);*!*/
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+
+/*!*!* Protegemos tu bienestar *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*width: 191px;*!*/
+/*!*height: 16px;*!*/
+/*!*left: -57px;*!*/
+/*!*top: 199px;*!*/
+
+/*!*!* Subtitle/subtitle-12-upper *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 700;*!*/
+/*!*font-size: 12px;*!*/
+/*!*line-height: 16px;*!*/
+/*!*!* identical to box height, or 133% *!*!*/
+/*!*text-align: right;*!*/
+/*!*letter-spacing: 1px;*!*/
+/*!*text-transform: uppercase;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+/*!*transform: rotate(-90deg);*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 5.65%;*!*/
+/*!*right: 91.29%;*!*/
+/*!*top: 104.32%;*!*/
+/*!*bottom: -6.92%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 2.23%;*!*/
+/*!*right: 94.52%;*!*/
+/*!*top: 105.4%;*!*/
+/*!*bottom: -8.43%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -0.29%;*!*/
+/*!*right: 98.33%;*!*/
+/*!*top: 106.03%;*!*/
+/*!*bottom: -8.57%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -1.87%;*!*/
+/*!*right: 100.8%;*!*/
+/*!*top: 105.91%;*!*/
+/*!*bottom: -8.5%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -5.5%;*!*/
+/*!*right: 102.09%;*!*/
+/*!*top: 105.1%;*!*/
+/*!*bottom: -8.23%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -8.36%;*!*/
+/*!*right: 105%;*!*/
+/*!*top: 103.81%;*!*/
+/*!*bottom: -6.89%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -7.61%;*!*/
+/*!*right: 104.58%;*!*/
+/*!*top: 86.57%;*!*/
+/*!*bottom: 10.81%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -4.37%;*!*/
+/*!*right: 101.14%;*!*/
+/*!*top: 85.13%;*!*/
+/*!*bottom: 11.86%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -0.55%;*!*/
+/*!*right: 98.62%;*!*/
+/*!*top: 85%;*!*/
+/*!*bottom: 12.46%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 1.88%;*!*/
+/*!*right: 97.01%;*!*/
+/*!*top: 85.1%;*!*/
+/*!*bottom: 12.3%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 3.18%;*!*/
+/*!*right: 93.39%;*!*/
+/*!*top: 85.39%;*!*/
+/*!*bottom: 11.46%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 6.07%;*!*/
+/*!*right: 90.56%;*!*/
+/*!*top: 86.77%;*!*/
+/*!*bottom: 10.16%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 10.49%;*!*/
+/*!*right: 86.54%;*!*/
+/*!*top: 91.88%;*!*/
+/*!*bottom: 6.28%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 11.09%;*!*/
+/*!*right: 85.88%;*!*/
+/*!*top: 93.9%;*!*/
+/*!*bottom: 4.08%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 11.25%;*!*/
+/*!*right: 85.71%;*!*/
+/*!*top: 96.51%;*!*/
+/*!*bottom: 1.51%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 12.28%;*!*/
+/*!*right: 86.18%;*!*/
+/*!*top: 99.31%;*!*/
+/*!*bottom: -0.57%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 10.18%;*!*/
+/*!*right: 88.28%;*!*/
+/*!*top: 100.43%;*!*/
+/*!*bottom: -1.7%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 10.82%;*!*/
+/*!*right: 86.81%;*!*/
+/*!*top: 99.16%;*!*/
+/*!*bottom: -1.85%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -12.38%;*!*/
+/*!*right: 109.42%;*!*/
+/*!*top: 100.07%;*!*/
+/*!*bottom: -1.95%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -13.09%;*!*/
+/*!*right: 110.08%;*!*/
+/*!*top: 97.91%;*!*/
+/*!*bottom: 0.06%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -13.33%;*!*/
+/*!*right: 110.31%;*!*/
+/*!*top: 95.35%;*!*/
+/*!*bottom: 2.68%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -12.94%;*!*/
+/*!*right: 111.41%;*!*/
+/*!*top: 93.27%;*!*/
+/*!*bottom: 5.47%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -10.88%;*!*/
+/*!*right: 109.35%;*!*/
+/*!*top: 92.1%;*!*/
+/*!*bottom: 6.63%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -12.36%;*!*/
+/*!*right: 109.94%;*!*/
+/*!*top: 91.99%;*!*/
+/*!*bottom: 5.36%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -9.39%;*!*/
+/*!*right: 108.57%;*!*/
+/*!*top: 90.41%;*!*/
+/*!*bottom: 8.89%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+/*!*transform: rotate(-65.72deg);*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 9.33%;*!*/
+/*!*right: 89.85%;*!*/
+/*!*top: 90.59%;*!*/
+/*!*bottom: 8.71%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+/*!*transform: rotate(-65.72deg);*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: -9.39%;*!*/
+/*!*right: 108.57%;*!*/
+/*!*top: 103.4%;*!*/
+/*!*bottom: -4.1%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+/*!*transform: rotate(-65.72deg);*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*left: 9.33%;*!*/
+/*!*right: 89.85%;*!*/
+/*!*top: 103.58%;*!*/
+/*!*bottom: -4.28%;*!*/
+
+/*!*background: #1D1D1B;*!*/
+/*!*transform: rotate(-65.72deg);*!*/
+
+
+/*!*!* flotante *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*justify-content: center;*!*/
+/*!*align-items: center;*!*/
+/*!*padding: 10px 10px 10px 20px;*!*/
+/*!*gap: 12px;*!*/
+
+/*!*position: absolute;*!*/
+/*!*visibility: hidden;*!*/
+/*!*width: 210px;*!*/
+/*!*height: 72px;*!*/
+/*!*left: 244px;*!*/
+/*!*top: 304px;*!*/
+
+/*!*!* Grey/grey-10*!*/
+
+/*!*primary background*!*/
+/*!**!*!*/
+/*!*background: #F8F9FF;*!*/
+/*!*border-radius: 0px 100px 100px 28px;*!*/
+
+
+/*!*!* Frame 1599263 *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 8px;*!*/
+
+/*!*width: 116px;*!*/
+/*!*height: 40px;*!*/
+
+/*!*transform: rotate(-180deg);*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Paga solo por lo que necesitas *!*!*/
+
+/*!*width: 116px;*!*/
+/*!*height: 40px;*!*/
+
+/*!*!* Title/title-14-bold *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 700;*!*/
+/*!*font-size: 14px;*!*/
+/*!*line-height: 20px;*!*/
+/*!*!* or 143% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: center;*!*/
+/*!*letter-spacing: 0.2px;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Group 1598531 *!*!*/
+
+/*!*width: 52px;*!*/
+/*!*height: 52px;*!*/
+
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Rectangle 3302 *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*width: 52px;*!*/
+/*!*height: 52px;*!*/
+/*!*left: 200px;*!*/
+/*!*top: 10px;*!*/
+
+/*!*background: #C4C4C4;*!*/
+/*!*border-radius: 286px;*!*/
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+
+/*!*!* shutterstock_2142690895 1 *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*width: 167px;*!*/
+/*!*height: 112px;*!*/
+/*!*left: 285px;*!*/
+/*!*top: -2px;*!*/
+
+/*!*background: url(shutterstock_2142690895-2.jpg);*!*/
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+
+/*!*!* +20-hombre-laptop-feliz-casa-usuario *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 128.57%;*!*/
+/*!*right: -110%;*!*/
+/*!*top: -9.72%;*!*/
+/*!*bottom: -51.39%;*!*/
+
+/*!*background: url(+20-hombre-laptop-feliz-casa-usuario.jpg);*!*/
+/*!*transform: matrix(-1, 0, 0, 1, 0, 0);*!*/
+
+
+/*!*!* Frame 1000004351 *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 32px 216px 80px 128px;*!*/
+/*!*gap: 24px;*!*/
+
+/*!*width: 696px;*!*/
+/*!*height: 744px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Frame 1000004368 *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 16px;*!*/
+
+/*!*width: 352px;*!*/
+/*!*height: 168px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* tag-promo *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: center;*!*/
+/*!*padding: 4px 8px;*!*/
+/*!*gap: 4px;*!*/
+
+/*!*width: 172px;*!*/
+/*!*height: 24px;*!*/
+
+/*!*!* Gradients/Background/aqua-lemon*!*/
+
+/*!*banner, tag*!*/
+/*!**!*!*/
+/*!*background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);*!*/
+/*!*border-radius: 4px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* label *!*!*/
+
+/*!*width: 156px;*!*/
+/*!*height: 16px;*!*/
+
+/*!*!* Component text/comp-14-bold *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 700;*!*/
+/*!*font-size: 14px;*!*/
+/*!*line-height: 16px;*!*/
+/*!*!* identical to box height, or 114% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: center;*!*/
+/*!*letter-spacing: 0.4px;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Frame 1000004368 *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 8px;*!*/
+
+/*!*width: 352px;*!*/
+/*!*height: 128px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Creado para ti y tu familia *!*!*/
+
+/*!*width: 352px;*!*/
+/*!*height: 80px;*!*/
+
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 700;*!*/
+/*!*font-size: 32px;*!*/
+/*!*line-height: 40px;*!*/
+/*!*!* or 125% *!*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría. 100% online. *!*!*/
+
+/*!*width: 352px;*!*/
+/*!*height: 40px;*!*/
+
+/*!*!* Subtitle/subtitle-14 *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 600;*!*/
+/*!*font-size: 14px;*!*/
+/*!*line-height: 20px;*!*/
+/*!*!* or 143% *!*!*/
+/*!*letter-spacing: 0.2px;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Frame 1000004290 *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 16px;*!*/
+
+/*!*width: 352px;*!*/
+/*!*height: 244px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* dropdown-textfield *!*!*/
+
+/*!*box-sizing: border-box;*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+
+/*!*width: 352px;*!*/
+/*!*height: 56px;*!*/
+
+/*!*!* Grey/grey-10*!*/
+
+/*!*primary background*!*/
+/*!**!*!*/
+/*!*background: #F8F9FF;*!*/
+/*!*!* Grey/grey-60*!*/
+
+/*!*disabled, inactive*!*/
+/*!**!*!*/
+/*!*border: 1px solid #5E6488;*!*/
+/*!*border-radius: 8px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* dropdown *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: center;*!*/
+/*!*padding: 16px;*!*/
+/*!*gap: 8px;*!*/
+
+/*!*width: 140px;*!*/
+/*!*height: 56px;*!*/
+
+/*!*!* Grey/grey-60*!*/
+
+/*!*disabled, inactive*!*/
+/*!**!*!*/
+/*!*border-right: 1px solid #5E6488;*!*/
+/*!*border-radius: 8px 0px 0px 8px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Input text *!*!*/
+
+/*!*width: 80px;*!*/
+/*!*height: 24px;*!*/
+
+/*!*!* Component text/comp-16-regular *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 400;*!*/
+/*!*font-size: 16px;*!*/
+/*!*line-height: 24px;*!*/
+/*!*!* identical to box height, or 150% *!*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 1;*!*/
+
+
+/*!*!* gl-sm-down *!*!*/
+
+/*!*width: 20px;*!*/
+/*!*height: 20px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 0%;*!*/
+/*!*right: 0%;*!*/
+/*!*top: 100%;*!*/
+/*!*bottom: -100%;*!*/
+
+/*!*opacity: 0;*!*/
+/*!*transform: rotate(-90deg);*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 17.47%;*!*/
+/*!*right: 17.47%;*!*/
+/*!*top: 33.09%;*!*/
+/*!*bottom: 25.53%;*!*/
+
+/*!*!* Grey/grey-100*!*/
+
+/*!*text, glyph, dark background*!*/
+/*!**!*!*/
+/*!*background: #03050F;*!*/
+
+
+/*!*!* textfield *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 8px 16px;*!*/
+
+/*!*width: 212px;*!*/
+/*!*height: 56px;*!*/
+
+/*!*border-radius: 0px 8px 8px 0px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 1;*!*/
+
+
+/*!*!* Label *!*!*/
+
+/*!*width: 180px;*!*/
+/*!*height: 16px;*!*/
+
+/*!*!* Component text/comp-12-regular *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 400;*!*/
+/*!*font-size: 12px;*!*/
+/*!*line-height: 16px;*!*/
+/*!*!* identical to box height, or 133% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: flex-end;*!*/
+
+/*!*!* Grey/grey-60 *!*!*/
+/*!*color: #5E6488;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*align-self: stretch;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Input *!*!*/
+
+/*!*width: 180px;*!*/
+/*!*height: 24px;*!*/
+
+/*!*!* Component text/comp-16-regular *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 400;*!*/
+/*!*font-size: 16px;*!*/
+/*!*line-height: 24px;*!*/
+/*!*!* identical to box height, or 150% *!*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*align-self: stretch;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* text-field *!*!*/
+
+/*!*box-sizing: border-box;*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: center;*!*/
+/*!*padding: 8px 16px;*!*/
+/*!*gap: 8px;*!*/
+
+/*!*width: 352px;*!*/
+/*!*height: 56px;*!*/
+
+/*!*!* Grey/grey-10*!*/
+
+/*!*primary background*!*/
+/*!**!*!*/
+/*!*background: #F8F9FF;*!*/
+/*!*!* Grey/grey-60*!*/
+
+/*!*disabled, inactive*!*/
+/*!**!*!*/
+/*!*border: 1px solid #5E6488;*!*/
+/*!*border-radius: 8px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Content *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+
+/*!*width: 320px;*!*/
+/*!*height: 40px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 1;*!*/
+
+
+/*!*!* Label *!*!*/
+
+/*!*width: 320px;*!*/
+/*!*height: 16px;*!*/
+
+/*!*!* Component text/comp-12-regular *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 400;*!*/
+/*!*font-size: 12px;*!*/
+/*!*line-height: 16px;*!*/
+/*!*!* identical to box height, or 133% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: flex-end;*!*/
+
+/*!*!* Grey/grey-60 *!*!*/
+/*!*color: #5E6488;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*align-self: stretch;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Input *!*!*/
+
+/*!*width: 320px;*!*/
+/*!*height: 24px;*!*/
+
+/*!*!* Component text/comp-16-regular *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 400;*!*/
+/*!*font-size: 16px;*!*/
+/*!*line-height: 24px;*!*/
+/*!*!* identical to box height, or 150% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: center;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*align-self: stretch;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Solid/gl-md-view *!*!*/
+
+/*!*display: none;*!*/
+/*!*width: 24px;*!*/
+/*!*height: 24px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Frame 1000004410 *!*!*/
+
+/*!*width: 100px;*!*/
+/*!*height: 100px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 2;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Frame 1601020 *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: column;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 12px;*!*/
+
+/*!*width: 351px;*!*/
+/*!*height: 84px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 2;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* checkbox-paragraph *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: center;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 12px;*!*/
+
+/*!*width: 278px;*!*/
+/*!*height: 20px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Checkbox *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 2px;*!*/
+/*!*gap: 10px;*!*/
+
+/*!*width: 20px;*!*/
+/*!*height: 20px;*!*/
+
+/*!*!* Grey/grey-100*!*/
+
+/*!*text, glyph, dark background*!*/
+/*!**!*!*/
+/*!*background: #0A051E;*!*/
+/*!*border-radius: 4px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* gl-sm-check *!*!*/
+
+/*!*width: 16px;*!*/
+/*!*height: 16px;*!*/
+
+/*!*border-radius: 4px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 0%;*!*/
+/*!*right: 0%;*!*/
+/*!*top: 0%;*!*/
+/*!*bottom: 0%;*!*/
+
+/*!*opacity: 0;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 14.34%;*!*/
+/*!*right: 15.91%;*!*/
+/*!*top: 22.16%;*!*/
+/*!*bottom: 22.41%;*!*/
+
+/*!*!* Grey/grey-0 *!*!*/
+/*!*background: #FFFFFF;*!*/
+
+
+/*!*!* Paragraph *!*!*/
+
+/*!*width: 246px;*!*/
+/*!*height: 20px;*!*/
+
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 400;*!*/
+/*!*font-size: 12px;*!*/
+/*!*line-height: 20px;*!*/
+/*!*!* identical to box height, or 167% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: center;*!*/
+/*!*letter-spacing: 0.1px;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #0A051E;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 1;*!*/
+
+
+/*!*!* checkbox-paragraph *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: center;*!*/
+/*!*padding: 0px;*!*/
+/*!*gap: 12px;*!*/
+
+/*!*width: 351px;*!*/
+/*!*height: 20px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Checkbox *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*align-items: flex-start;*!*/
+/*!*padding: 2px;*!*/
+/*!*gap: 10px;*!*/
+
+/*!*width: 20px;*!*/
+/*!*height: 20px;*!*/
+
+/*!*!* Grey/grey-100*!*/
+
+/*!*text, glyph, dark background*!*/
+/*!**!*!*/
+/*!*background: #0A051E;*!*/
+/*!*border-radius: 4px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* gl-sm-check *!*!*/
+
+/*!*width: 16px;*!*/
+/*!*height: 16px;*!*/
+
+/*!*border-radius: 4px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 0%;*!*/
+/*!*right: 0%;*!*/
+/*!*top: 0%;*!*/
+/*!*bottom: 0%;*!*/
+
+/*!*opacity: 0;*!*/
+
+
+/*!*!* Vector *!*!*/
+
+/*!*position: absolute;*!*/
+/*!*left: 14.34%;*!*/
+/*!*right: 15.91%;*!*/
+/*!*top: 22.16%;*!*/
+/*!*bottom: 22.41%;*!*/
+
+/*!*!* Grey/grey-0 *!*!*/
+/*!*background: #FFFFFF;*!*/
+
+
+/*!*!* Paragraph *!*!*/
+
+/*!*width: 319px;*!*/
+/*!*height: 20px;*!*/
+
+/*!*!* Body/body-12-regular *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 400;*!*/
+/*!*font-size: 12px;*!*/
+/*!*line-height: 20px;*!*/
+/*!*!* identical to box height, or 167% *!*!*/
+/*!*display: flex;*!*/
+/*!*align-items: center;*!*/
+/*!*letter-spacing: 0.1px;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #0A051E;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 1;*!*/
+
+
+/*!*!* Aplican Términos y Condiciones. *!*!*/
+
+/*!*width: 351px;*!*/
+/*!*height: 20px;*!*/
+
+/*!*!* Body expanded/body-12-link *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 600;*!*/
+/*!*font-size: 12px;*!*/
+/*!*line-height: 20px;*!*/
+/*!*!* identical to box height, or 167% *!*!*/
+/*!*letter-spacing: 0.1px;*!*/
+/*!*text-decoration-line: underline;*!*/
+
+/*!*!* Grey/grey-100 *!*!*/
+/*!*color: #03050F;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 2;*!*/
+/*!*align-self: stretch;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Button *!*!*/
+
+/*!*!* Auto layout *!*!*/
+/*!*display: flex;*!*/
+/*!*flex-direction: row;*!*/
+/*!*justify-content: center;*!*/
+/*!*align-items: center;*!*/
+/*!*padding: 20px 40px;*!*/
+/*!*gap: 8px;*!*/
+
+/*!*width: 195px;*!*/
+/*!*height: 64px;*!*/
+
+/*!*!* Grey/grey-100*!*/
+
+/*!*text, glyph, dark background*!*/
+/*!**!*!*/
+/*!*background: #03050F;*!*/
+/*!*border-radius: 40px;*!*/
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 3;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Solid/gl-sm-information *!*!*/
+
+/*!*display: none;*!*/
+/*!*width: 20px;*!*/
+/*!*height: 20px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 0;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* _Text *!*!*/
+
+/*!*width: 115px;*!*/
+/*!*height: 24px;*!*/
+
+/*!*!* Component text/comp-20-bold *!*!*/
+/*!*font-family: 'BR Sonoma';*!*/
+/*!*font-style: normal;*!*/
+/*!*font-weight: 700;*!*/
+/*!*font-size: 20px;*!*/
+/*!*line-height: 24px;*!*/
+/*!*!* identical to box height, or 120% *!*!*/
+/*!*text-align: center;*!*/
+/*!*letter-spacing: 0.4px;*!*/
+
+/*!*!* Grey/grey-0 *!*!*/
+/*!*color: #FFFFFF;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 1;*!*/
+/*!*flex-grow: 0;*!*/
+
+
+/*!*!* Solid/gl-md-coverage *!*!*/
+
+/*!*display: none;*!*/
+/*!*width: 20px;*!*/
+/*!*height: 20px;*!*/
+
+
+/*!*!* Inside auto layout *!*!*/
+/*!*flex: none;*!*/
+/*!*order: 2;*!*/
+/*!*flex-grow: 0;*!*/
