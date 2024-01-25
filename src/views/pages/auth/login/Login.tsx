@@ -1,9 +1,13 @@
 import React, {useState} from 'react';
-import {Field, useFormik} from 'formik';
+import { useFormik} from 'formik';
 import * as Yup from 'yup';
-import {Card, Col, Row, Form} from "react-bootstrap";
+import {Card, Row, Form} from "react-bootstrap";
+import usePlansService  from "../../../../core/services/PlansRService";
 
-const Login = () => {
+
+const Login =  () => {
+     const { addDataToRedux } = usePlansService();
+
     const [load, setLoad] = useState(false);
     const initialValues = {
         documento: '',
@@ -32,12 +36,13 @@ const Login = () => {
         console.log('hola')
         // Lógica para manejar la subida del formulario
         console.log(values);
+        handleAddData(values)
     };
 
     const formik = useFormik({
         enableReinitialize: true,
         initialValues: initialValues,
-        validationSchema:validationSchema,
+        validationSchema: validationSchema,
         onSubmit: values => {
             setLoad(true);
             handleSubmit({
@@ -45,6 +50,17 @@ const Login = () => {
             });
         },
     });
+
+
+    /**
+     * Agrega datos
+     */
+    const handleAddData = (row:any) => {
+        const newData = {
+         ...row
+        };
+        addDataToRedux(newData);
+    };
 
 
     return (
@@ -76,7 +92,8 @@ const Login = () => {
                                                 className={getValidationClass(formik.touched.documento, formik.errors.documento)}
                                             />
                                             {formik.touched.documento && formik.errors.documento && (
-                                                <Form.Control.Feedback type="invalid">{formik.errors.documento}</Form.Control.Feedback>
+                                                <Form.Control.Feedback
+                                                    type="invalid">{formik.errors.documento}</Form.Control.Feedback>
                                             )}
                                         </Form.Group>
                                     </div>
@@ -93,7 +110,8 @@ const Login = () => {
                                                 className={getValidationClass(formik.touched.telefono, formik.errors.telefono)}
                                             />
                                             {formik.touched.telefono && formik.errors.telefono && (
-                                                <Form.Control.Feedback type="invalid">{formik.errors.telefono}</Form.Control.Feedback>
+                                                <Form.Control.Feedback
+                                                    type="invalid">{formik.errors.telefono}</Form.Control.Feedback>
                                             )}
                                         </Form.Group>
                                     </div>
@@ -116,7 +134,8 @@ const Login = () => {
                                                 className={getValidationClass(formik.touched.terminos1, formik.errors.terminos1)}
                                             />
                                             {formik.touched.terminos1 && formik.errors.terminos1 && (
-                                                <div className="invalid-feedback d-block">{formik.errors.terminos1}</div>
+                                                <div
+                                                    className="invalid-feedback d-block">{formik.errors.terminos1}</div>
                                             )}
                                         </Form.Group>
                                     </div>
@@ -132,7 +151,8 @@ const Login = () => {
                                                 className={getValidationClass(formik.touched.terminos2, formik.errors.terminos2)}
                                             />
                                             {formik.touched.terminos2 && formik.errors.terminos2 && (
-                                                <div className="invalid-feedback d-block">{formik.errors.terminos2}</div>
+                                                <div
+                                                    className="invalid-feedback d-block">{formik.errors.terminos2}</div>
                                             )}
                                         </Form.Group>
                                     </div>

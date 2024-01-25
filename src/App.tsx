@@ -3,25 +3,24 @@ import Header from "./views/layout/header/Header";
 import React from "react";
 import Footer from "./views/layout/footer/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Provider} from 'react-redux';
+import store from './core/states/store';
 
 function App() {
     return (
-        <>
+        <Provider store={store}>
             <div className="App">
-
                 <div className={'frame1000004350'}>
-                    <Header/>
+                    <Header />
                     <div className={'hero form-container'}>
-                    <Navigation/>
+                        <Navigation />
                     </div>
                 </div>
-
+                <Footer />
             </div>
-
-            <Footer/>
-
-        </>
+        </Provider>
     );
 }
+
 
 export default App;

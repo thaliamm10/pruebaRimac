@@ -1,13 +1,14 @@
 import React from 'react';
-import {BrowserRouter, Navigate, NavLink, Route, Routes} from "react-router-dom";
-
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 const Auth = React.lazy(() => import("../views/pages/auth/Auth"));
 const Plans = React.lazy(() => import("../views/pages/plans/Plans"));
+
+
 const Navigation = () => {
 
     return (
         // <div className='hLayer'>
-
+        // <Provider store={store}>
         <BrowserRouter>
 
 
@@ -29,9 +30,7 @@ const Navigation = () => {
                 {/*</nav>*/}
 
                 <Routes>
-                    {/*<Route path="about" element={<h1>About Page</h1>}></Route>*/}
-                    {/*<Route path="users" element={<h1>Users Page</h1>}></Route>*/}
-                    {/*<Route path="home" element={<h1>Home Page</h1>}></Route>*/}
+
                     <Route path="login"  element={<Auth/>}></Route>
                     <Route path="plans"  element={<Plans/>}></Route>
 
@@ -41,6 +40,7 @@ const Navigation = () => {
 
 
         </BrowserRouter>
+        // </Provider>
         // </div>
 
     );

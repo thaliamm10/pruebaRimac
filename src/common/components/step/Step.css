@@ -23,6 +23,8 @@
 
 .step-label {
     margin-top: 5px;
+    display: inline-block;
+
 }
 
 .active .step-circle {
@@ -35,23 +37,31 @@
     color: #fff; /* Color del texto en el círculo completado */
 }
 
-.step:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    height: 2px;
-    width: 50px;
-    background-color: #ccc; /* Color de la barra de conexión entre los pasos */
-}
+/*.step:not(:last-child)::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    left: 50px;*/
+/*    height: 2px;*/
+/*    width: 50px;*/
+/*    background-color: #ccc; !* Color de la barra de conexión entre los pasos *!*/
+/*}*/
 
 /* StepComponent.css */
 .step {
+    /*display: flex;*/
+    /*align-items: center; !* Centra verticalmente los elementos *!*/
+    /*width: 100px;*/
+    /*position: relative;*/
+    /*inset-inline-start: auto;*/
+    /*margin-right: 20px; !* Ajusta el espacio entre los pasos *!*/
+
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    width: 100px;
-    position: relative;
-    margin-right: 20px; /* Ajusta el espacio entre los pasos */
+    width: 100%;
+    padding: 32px 120px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7fd;
 }
 
 .step-circle {
@@ -66,6 +76,6 @@
     background-color: #fff;
 }
 
-.step-label {
-    margin-left: 10px; /* Ajusta el espacio entre el círculo y la etiqueta */
-}
+/*.step-label {*/
+/*    margin-left: 10px; !* Ajusta el espacio entre el círculo y la etiqueta *!*/
+/*}*/
