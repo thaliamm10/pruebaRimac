@@ -28,13 +28,20 @@
 }
 
 .active .step-circle {
-    border-color: #007bff; /* Color del círculo activo */
+    border-color: #4F4FFF; /* Color del círculo activo */
 }
 
 .completed .step-circle {
-    border-color: #28a745; /* Color del círculo completado */
-    background-color: #28a745; /* Color del fondo del círculo completado */
-    color: #fff; /* Color del texto en el círculo completado */
+    color: #1f1f23;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Web/Title/Headline16_Reg */
+    /*font-family: Lato;*/
+    /*font-size: 16px;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*line-height: 24px; !* 150% *!*/
+    /*letter-spacing: 0.2px;*/
 }
 
 /*.step:not(:last-child)::after {*/

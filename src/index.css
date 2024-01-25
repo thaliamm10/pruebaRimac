@@ -429,6 +429,7 @@ text, glyph, dark background {
     gap: 8px;
     flex-shrink: 0;
 }
+
 /*!* text-field *!*/
 .text-field {
     display: flex;
@@ -519,4 +520,181 @@ text, glyph, dark background
     color: #F8F9FF;
 }
 
+.card-cotiza {
+    display: flex;
+    padding: 16px 24px 40px 24px;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 24px;
+    background: #FFF;
 
+
+    /* Web/Shadow_Large */
+    box-shadow: 0px 1px 32px 0px rgba(174, 172, 243, 0.35);
+}
+
+.txt-plans {
+    color: #141938;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.2px;
+}
+
+.txt-tplans {
+    color: #141938;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.2px;
+}
+
+.txt-principal {
+    color: #141938;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Web/Title_03/D_Bold_40px */
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: -0.6px;
+}
+
+.txt-principal2 {
+    color: #141938;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.1px;
+}
+
+.fw-bold {
+
+}
+
+.btn-plan {
+    display: flex;
+    padding: 14px 32px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 32px;
+    background: #FF1C44;
+}
+
+.card-plane-home {
+    display: flex;
+    width: 288px;
+    height: 687px;
+    padding: 68px 32px 48px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 1px 32px 0px rgba(174, 172, 243, 0.35);
+}
+
+.txt-select-plan {
+    color: #FFF;
+    /*text-align: center;*/
+    /*font-feature-settings: 'clig' off, 'liga' off;*/
+
+    /*!* Web/Button/Button3 *!*/
+    /*font-family: Lato;*/
+    /*font-size: 18px;*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*line-height: 20px; !* 111.111% *!*/
+    /*letter-spacing: 0.4px;*/
+}
+
+.txt-plan-home {
+    color: #141938;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Web/Title/Headline11_Black */
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.2px;
+}
+
+.img-home {
+    width: 56px;
+    height: 56px;
+}
+
+.recomend {
+    border-radius: 6px;
+    background: #7DF0BA;
+    display: flex;
+    padding: 2px 8px;
+    align-items: center;
+    gap: 4px;
+
+    color: #141938;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.4px;
+}
+
+.planes-v {
+    margin: 50px !important;
+}
+
+.resumen-seguro {
+    color: #141938;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: -0.6px;
+}
+.precio{
+    color: #141938;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Web/Title/Headline22_Upper_Black */
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px; /* 160% */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/*.step-completed{*/
+/*    color:  #7981B2;*/
+/*    font-feature-settings: 'clig' off, 'liga' off;*/
+
+/*    !* Web/Title/Headline16_Reg *!*/
+/*    font-family: Lato;*/
+/*    font-size: 16px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: 24px; !* 150% *!*/
+/*    letter-spacing: 0.2px;*/
+/*}*/

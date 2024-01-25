@@ -8,12 +8,15 @@ interface StepProps {
     label: string;
     isActive: boolean;
     isCompleted: boolean;
+    onClick: () => void;
 }
 
-const Step: React.FC<StepProps> = ({ step, label, isActive, isCompleted }) => {
+const Step: React.FC<StepProps> = ({ step, label, isActive, isCompleted, onClick }) => {
+
     return (
-        <div className={` step ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}`}>
-            <div className="step-circle">{isCompleted ? '✔' : step}</div>
+        <div className={` step ${isActive ? 'active' : ''} ${isCompleted ? 'completed step-completed' : ''}`}
+             onClick={onClick}>
+            <div className="step-circle">{isCompleted ? '' : step}</div>
             <div className="step-label">{label}</div>
         </div>
     );
@@ -24,6 +27,7 @@ Step.propTypes = {
     label: PropTypes.string.isRequired,
     isActive: PropTypes.bool.isRequired,
     isCompleted: PropTypes.bool.isRequired,
+    onClick: PropTypes.func.isRequired,
 };
 
 export default Step;

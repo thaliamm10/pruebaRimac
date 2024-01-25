@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
-import { useFormik} from 'formik';
+import React, {startTransition, useState} from 'react';
+import {useFormik} from 'formik';
 import * as Yup from 'yup';
 import {Card, Row, Form} from "react-bootstrap";
-import usePlansService  from "../../../../core/services/PlansRService";
+import usePlansService from "../../../../core/hooks/services/PlansRService";
+import {useNavigate} from "react-router-dom";
 
+const Login = () => {
+    const navigate = useNavigate();
 
-const Login =  () => {
-     const { addDataToRedux } = usePlansService();
+    const {addDataToRedux} = usePlansService();
 
     const [load, setLoad] = useState(false);
     const initialValues = {
@@ -33,9 +35,6 @@ const Login =  () => {
     const getValidationClass = (touched: boolean | undefined, error: string | undefined) => (touched && error ? 'is-invalid' : '');
 
     const handleSubmit = (values: any) => {
-        console.log('hola')
-        // Lógica para manejar la subida del formulario
-        console.log(values);
         handleAddData(values)
     };
 
@@ -55,13 +54,31 @@ const Login =  () => {
     /**
      * Agrega datos
      */
-    const handleAddData = (row:any) => {
-        const newData = {
-         ...row
-        };
-        addDataToRedux(newData);
-    };
+    // const handleAddData = (row: any) => {
+    //     const newData = {
+    //         ...row
+    //     };
+    //     try {
+    //         addDataToRedux(newData);
+    //         navigate("/plans");
+    //     } catch (error) {
+    //         navigate("/error", {state: {message: "Error"}});
+    //     }
+    // };
+    const handleAddData = (row: any) => {
+            const newData = {
+                ...row
+            };
 
+            try {
+                startTransition(() => {
+                    addDataToRedux(newData);
+                    navigate("/plans");
+                });
+            } catch (error) {
+                navigate("/error", {state: {message: "Error"}});
+            }
+        };
 
     return (
         <div className={'frame1000004351'}>
