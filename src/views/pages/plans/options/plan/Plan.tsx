@@ -27,7 +27,9 @@ const Plan: React.FC<PersonalProps> = ({edad = 25, opcion, selectedPlan}) => {
 
     const selectedValor = (plan: Plans) => {
 
-        selectedPlan(plan)
+        selectedPlan({...plan,
+            price: opcion === '1' ? plan.price : (plan.price - plan.price * 0.05)
+        })
 
     }
 
