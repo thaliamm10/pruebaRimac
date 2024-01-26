@@ -1,7 +1,16 @@
 /* App.css */
-.step-container {
-    display: flex;
-    justify-content: center;
-    background: #7b87ce;
-    width: 100%;
+.form-check-input:checked {
+    background-color: #198754;
+    border-color: #198754;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background-image: url('../../../assets/images/gl_check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cardOption{
+    border:10px
 }

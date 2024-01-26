@@ -16,7 +16,7 @@ const Step: React.FC<StepProps> = ({ step, label, isActive, isCompleted, onClick
     return (
         <div className={` step ${isActive ? 'active' : ''} ${isCompleted ? 'completed step-completed' : ''}`}
              onClick={onClick}>
-            <div className="step-circle">{isCompleted ? '' : step}</div>
+            <div className="step-circle">{step}</div>
             <div className="step-label">{label}</div>
         </div>
     );

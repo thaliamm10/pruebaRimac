@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, Form} from "react-bootstrap";
 import imgMe from "../../../../../assets/images/IcProtectionLight.svg";
 import imgMore from "../../../../../assets/images/IcAddUserLight.png";
-import Personal from "../personal/Personal";
+import Plan from "../plan/Plan";
 import {useFormik} from "formik";
 import * as Yup from "yup";
 
@@ -11,8 +11,12 @@ interface UserDetail {
     lastName: string;
     birthDay: string;
 }
+interface PersonalProps {
+    priceSelect: (nuevoValor: any) => void;
+}
 
-const Price = () => {
+const
+    Price : React.FC<PersonalProps> = ({priceSelect}) => {
     const userDetail: UserDetail = require('../../../../../assets/json/user.json');
 
     const initialValues = {
@@ -24,6 +28,10 @@ const Price = () => {
             .oneOf([true], 'Debe aceptar los términos de Política Comunicaciones Comerciales'),
     });
 
+        const seleccionarValor = (nuevoValor:any) => {
+            // console.log(nuevoValor)
+            priceSelect(nuevoValor)
+        };
 
     const formik = useFormik({
         enableReinitialize: true,
@@ -100,7 +108,7 @@ const Price = () => {
             </div>
 
             {formik.values?.opcionC && (
-                <Personal edad={25} opcion={formik.values.opcionC} />
+                <Plan edad={25} opcion={formik.values.opcionC} selectedPlan={seleccionarValor} />
             )}
 
         </>

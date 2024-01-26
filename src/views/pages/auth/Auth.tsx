@@ -8,9 +8,9 @@ const Auth = () => {
             <div
                 className={'left-image blur-asset'}
             />
-            {/*<div*/}
-            {/*    className={'right-image'}*/}
-            {/*/>*/}
+            <div
+                className={'right-image'}
+            />
 
             <div className={'frame1000004308'}>
                 <img src={imgLogo} className={'frame1000004298'} alt="Logo"/>

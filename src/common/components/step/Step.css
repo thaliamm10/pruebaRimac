@@ -1,18 +1,65 @@
+@media (min-width: 768px) {
+
+    .step {
+        display: flex;
+        /* width: 100%; */
+        padding: 10px 200px;
+        justify-content: space-between;
+        align-items: center;
+        color: #7981B2;
+        border-color: #7981B2;
+    }
+    .step-container {
+        display: flex;
+        justify-content: center;
+        background: #EDEFFC;
+        /*width: 100%;*/
+    }
+    .active .step-circle {
+        border-color: #4F4FFF; /* Color del círculo activo */
+        border-color: #4F4FFF;
+        background: #4F4FFF;
+        color: white;
+    }
 
 
-/* StepComponent.css */
-.step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-    position: relative;
+
 }
 
+@media (max-width: 767px) {
+
+    .step {
+        display: flex;
+        /* width: 100%; */
+        padding: 10px 200px;
+        justify-content: space-between;
+        align-items: center;
+        color: #7981B2;
+        border-color: #7981B2;
+    }
+    .step-container {
+        display: flex;
+        justify-content: center;
+        background: #EDEFFC;
+        width: 100%;
+    }
+    .active .step-circle {
+        border-color: #4F4FFF; /* Color del círculo activo */
+        border-color: #4F4FFF;
+        background: #4F4FFF;
+        color: white;
+    }
+
+
+}
+
+
+
 .step-circle {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 2px solid #ccc;
+    margin-right: 2px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -27,62 +74,7 @@
 
 }
 
-.active .step-circle {
-    border-color: #4F4FFF; /* Color del círculo activo */
-}
 
 .completed .step-circle {
-    color: #1f1f23;
     font-feature-settings: 'clig' off, 'liga' off;
-
-    /* Web/Title/Headline16_Reg */
-    /*font-family: Lato;*/
-    /*font-size: 16px;*/
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*line-height: 24px; !* 150% *!*/
-    /*letter-spacing: 0.2px;*/
 }
-
-/*.step:not(:last-child)::after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 20px;*/
-/*    left: 50px;*/
-/*    height: 2px;*/
-/*    width: 50px;*/
-/*    background-color: #ccc; !* Color de la barra de conexión entre los pasos *!*/
-/*}*/
-
-/* StepComponent.css */
-.step {
-    /*display: flex;*/
-    /*align-items: center; !* Centra verticalmente los elementos *!*/
-    /*width: 100px;*/
-    /*position: relative;*/
-    /*inset-inline-start: auto;*/
-    /*margin-right: 20px; !* Ajusta el espacio entre los pasos *!*/
-
-    display: flex;
-    width: 100%;
-    padding: 32px 120px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e7e7fd;
-}
-
-.step-circle {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    background-color: #fff;
-}
-
-/*.step-label {*/
-/*    margin-left: 10px; !* Ajusta el espacio entre el círculo y la etiqueta *!*/
-/*}*/

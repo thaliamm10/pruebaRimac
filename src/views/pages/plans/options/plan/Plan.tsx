@@ -1,8 +1,7 @@
-import React, {startTransition, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Card} from "react-bootstrap";
 import imgH from "../../../../../assets/images/IcHospitalLight.png";
-import {Simulate} from "react-dom/test-utils";
-import {useNavigate} from "react-router-dom";
+
 
 interface Plans {
     name: string,
@@ -14,10 +13,11 @@ interface Plans {
 interface PersonalProps {
     edad?: number;
     opcion?: string;
+    selectedPlan: (nuevoValor: Plans) => void;
 }
 
-const Personal: React.FC<PersonalProps> = ({edad = 25, opcion}) => {
-    const navigate = useNavigate();
+const Plan: React.FC<PersonalProps> = ({edad = 25, opcion, selectedPlan}) => {
+
     const [plan, setPlan] = useState([])
     const dt: any = require('../../../../../assets/json/plans.json');
     const cargarPlans = () => {
@@ -25,11 +25,10 @@ const Personal: React.FC<PersonalProps> = ({edad = 25, opcion}) => {
         setPlan(data)
     }
 
-    const selectedPlan = (plan: Plans) => {
-        console.log(plan)
-        startTransition(() => {
-            navigate('/sumary')
-        })
+    const selectedValor = (plan: Plans) => {
+
+        selectedPlan(plan)
+
     }
 
 
@@ -67,7 +66,7 @@ const Personal: React.FC<PersonalProps> = ({edad = 25, opcion}) => {
                                 </ul>
                                 <p>Edad permitida: {plan.age} años</p>
                                 <button className={'btn-plan txt-select-plan'}
-                                        onClick={() => selectedPlan(plan)}>Seleccionar Plan
+                                        onClick={() => selectedValor(plan)}>Seleccionar Plan
                                 </button>
                             </Card.Body>
                         </Card>
@@ -78,4 +77,4 @@ const Personal: React.FC<PersonalProps> = ({edad = 25, opcion}) => {
     );
 };
 
-export default Personal;
+export default Plan;

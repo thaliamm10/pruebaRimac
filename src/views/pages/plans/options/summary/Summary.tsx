@@ -1,15 +1,18 @@
 import React from 'react';
 import {Card, Row} from "react-bootstrap";
 
-
-const Summary = (datos: any) => {
+interface SumaryProps {
+    datos?: any;
+}
+const Summary: React.FC<SumaryProps> = ({datos}) => {
 
     return (
         <>
             <Row>
                 <div className="row justify-content-center align-content-center">
-                    <p className={'resumen-seguro'}>Resumen del seguro</p>
-                    <div className="col-12">
+
+                    <div className="col-8">
+                        <p className={'resumen-seguro'}>Resumen del seguro</p>
                         <Card style={{width: '18rem'}} className={'card-cotiza'}>
                             <Card.Header>
                                 <p className={'precio'}>PRECIOS CALCULADOS PARA:</p>
