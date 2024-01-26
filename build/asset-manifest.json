@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/pruebaRimac/build/static/css/main.2f9e7f7e.css",
-    "main.js": "/pruebaRimac/build/static/js/main.a90a405d.js",
+    "main.js": "/pruebaRimac/build/static/js/main.85efb65e.js",
     "static/js/671.fd36e5e6.chunk.js": "/pruebaRimac/build/static/js/671.fd36e5e6.chunk.js",
     "static/css/458.9bbdf934.chunk.css": "/pruebaRimac/build/static/css/458.9bbdf934.chunk.css",
-    "static/js/458.e84d63dc.chunk.js": "/pruebaRimac/build/static/js/458.e84d63dc.chunk.js",
+    "static/js/458.167fabaf.chunk.js": "/pruebaRimac/build/static/js/458.167fabaf.chunk.js",
     "static/js/425.3b836e4b.chunk.js": "/pruebaRimac/build/static/js/425.3b836e4b.chunk.js",
     "static/js/787.a40b3a28.chunk.js": "/pruebaRimac/build/static/js/787.a40b3a28.chunk.js",
     "static/js/509.2df69635.chunk.js": "/pruebaRimac/build/static/js/509.2df69635.chunk.js",
@@ -26,16 +26,16 @@
     "index.html": "/pruebaRimac/build/index.html",
     "static/media/gl_check.svg": "/pruebaRimac/build/static/media/gl_check.54445ea5b4a99f8b7a19.svg",
     "main.2f9e7f7e.css.map": "/pruebaRimac/build/static/css/main.2f9e7f7e.css.map",
-    "main.a90a405d.js.map": "/pruebaRimac/build/static/js/main.a90a405d.js.map",
+    "main.85efb65e.js.map": "/pruebaRimac/build/static/js/main.85efb65e.js.map",
     "671.fd36e5e6.chunk.js.map": "/pruebaRimac/build/static/js/671.fd36e5e6.chunk.js.map",
     "458.9bbdf934.chunk.css.map": "/pruebaRimac/build/static/css/458.9bbdf934.chunk.css.map",
-    "458.e84d63dc.chunk.js.map": "/pruebaRimac/build/static/js/458.e84d63dc.chunk.js.map",
+    "458.167fabaf.chunk.js.map": "/pruebaRimac/build/static/js/458.167fabaf.chunk.js.map",
     "425.3b836e4b.chunk.js.map": "/pruebaRimac/build/static/js/425.3b836e4b.chunk.js.map",
     "787.a40b3a28.chunk.js.map": "/pruebaRimac/build/static/js/787.a40b3a28.chunk.js.map",
     "509.2df69635.chunk.js.map": "/pruebaRimac/build/static/js/509.2df69635.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f9e7f7e.css",
-    "static/js/main.a90a405d.js"
+    "static/js/main.85efb65e.js"
   ]
 }
