@@ -8,7 +8,7 @@ const Sumary = React.lazy(() => import("../views/pages/plans/options/summary/Sum
 const Navigation = () => {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/pruebaRimac">
                 <Routes>
 
                     <Route path="login"  element={<Auth/>}></Route>
