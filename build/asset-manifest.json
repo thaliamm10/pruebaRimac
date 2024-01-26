@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/pruebaRimac/build/static/css/main.d7dabde2.css",
-    "main.js": "/pruebaRimac/build/static/js/main.3d6063c7.js",
-    "static/js/671.2ef9315b.chunk.js": "/pruebaRimac/build/static/js/671.2ef9315b.chunk.js",
-    "static/css/810.5b1fdb2d.chunk.css": "/pruebaRimac/build/static/css/810.5b1fdb2d.chunk.css",
-    "static/js/810.1f137dba.chunk.js": "/pruebaRimac/build/static/js/810.1f137dba.chunk.js",
-    "static/js/425.4cf0e653.chunk.js": "/pruebaRimac/build/static/js/425.4cf0e653.chunk.js",
+    "main.css": "/pruebaRimac/build/static/css/main.2f9e7f7e.css",
+    "main.js": "/pruebaRimac/build/static/js/main.a90a405d.js",
+    "static/js/671.fd36e5e6.chunk.js": "/pruebaRimac/build/static/js/671.fd36e5e6.chunk.js",
+    "static/css/458.9bbdf934.chunk.css": "/pruebaRimac/build/static/css/458.9bbdf934.chunk.css",
+    "static/js/458.e84d63dc.chunk.js": "/pruebaRimac/build/static/js/458.e84d63dc.chunk.js",
+    "static/js/425.3b836e4b.chunk.js": "/pruebaRimac/build/static/js/425.3b836e4b.chunk.js",
     "static/js/787.a40b3a28.chunk.js": "/pruebaRimac/build/static/js/787.a40b3a28.chunk.js",
     "static/js/509.2df69635.chunk.js": "/pruebaRimac/build/static/js/509.2df69635.chunk.js",
     "static/media/molecularB.png": "/pruebaRimac/build/static/media/molecularB.a53c60e798e6616b9bc9.png",
@@ -24,17 +24,18 @@
     "static/media/Logo.svg": "/pruebaRimac/build/static/media/Logo.2b2b97ec6634b251da9045abcfc699ba.svg",
     "static/media/IcProtectionLight.svg": "/pruebaRimac/build/static/media/IcProtectionLight.04bbe2b5e45bffb607ac8e5500b99711.svg",
     "index.html": "/pruebaRimac/build/index.html",
-    "main.d7dabde2.css.map": "/pruebaRimac/build/static/css/main.d7dabde2.css.map",
-    "main.3d6063c7.js.map": "/pruebaRimac/build/static/js/main.3d6063c7.js.map",
-    "671.2ef9315b.chunk.js.map": "/pruebaRimac/build/static/js/671.2ef9315b.chunk.js.map",
-    "810.5b1fdb2d.chunk.css.map": "/pruebaRimac/build/static/css/810.5b1fdb2d.chunk.css.map",
-    "810.1f137dba.chunk.js.map": "/pruebaRimac/build/static/js/810.1f137dba.chunk.js.map",
-    "425.4cf0e653.chunk.js.map": "/pruebaRimac/build/static/js/425.4cf0e653.chunk.js.map",
+    "static/media/gl_check.svg": "/pruebaRimac/build/static/media/gl_check.54445ea5b4a99f8b7a19.svg",
+    "main.2f9e7f7e.css.map": "/pruebaRimac/build/static/css/main.2f9e7f7e.css.map",
+    "main.a90a405d.js.map": "/pruebaRimac/build/static/js/main.a90a405d.js.map",
+    "671.fd36e5e6.chunk.js.map": "/pruebaRimac/build/static/js/671.fd36e5e6.chunk.js.map",
+    "458.9bbdf934.chunk.css.map": "/pruebaRimac/build/static/css/458.9bbdf934.chunk.css.map",
+    "458.e84d63dc.chunk.js.map": "/pruebaRimac/build/static/js/458.e84d63dc.chunk.js.map",
+    "425.3b836e4b.chunk.js.map": "/pruebaRimac/build/static/js/425.3b836e4b.chunk.js.map",
     "787.a40b3a28.chunk.js.map": "/pruebaRimac/build/static/js/787.a40b3a28.chunk.js.map",
     "509.2df69635.chunk.js.map": "/pruebaRimac/build/static/js/509.2df69635.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7dabde2.css",
-    "static/js/main.3d6063c7.js"
+    "static/css/main.2f9e7f7e.css",
+    "static/js/main.a90a405d.js"
   ]
 }

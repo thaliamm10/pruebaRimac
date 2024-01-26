@@ -15,6 +15,7 @@ const Navigation = () => {
                     <Route path="plans"  element={<Plans/>}></Route>
                     <Route path="sumary"  element={<Sumary/>}></Route>
 
+
                     <Route path="/*" element={<Navigate to="/login" replace/>}></Route>
                 </Routes>
         </BrowserRouter>
