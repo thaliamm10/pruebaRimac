@@ -10,23 +10,8 @@ import './index.css';
 function App() {
     return (
         <Provider store={store}>
-
-            {/*<div className="App">*/}
-            {/*    <body>*/}
-            {/*    <Header/>*/}
-            {/*    <main className="container">*/}
-            {/*    <div className={'app__navigation'}>*/}
-            {/*        <Navigation/>*/}
-            {/*    </div>*/}
-            {/*    </main>*/}
-            {/*    <Footer/>*/}
-            {/*    </body>*/}
-
-            {/*</div>*/}
-
             <div className="App">
-                <Header/>
-
+                <Header/>git
                 <main className="container-fluid">
                     <Navigation/>
                 </main>
