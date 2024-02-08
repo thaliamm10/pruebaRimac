@@ -70,7 +70,9 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: validationSchema,
         onSubmit: values => {
-
+            handleSubmit({
+                ...values
+            });
         },
     });
 
