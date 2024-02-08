@@ -4,11 +4,12 @@ import './Plans.css';
 import {Row} from "react-bootstrap";
 import Price from "./options/price/Price";
 import Summary from "./options/summary/Summary";
-
+import {useSelector} from 'react-redux';
 
 const Plans: React.FC<any> = () => {
     const [option, setOption] = useState(0)
     const [data, setData] = useState({})
+    const datosPersona = useSelector((state: any) => state.data);
 
 
     const [steps, setSteps] = useState([
@@ -29,12 +30,15 @@ const Plans: React.FC<any> = () => {
     };
 
     const selectPrice = (val: any) => {
+        console.log()
+        const persona = datosPersona.data[0];
+
         setOption(1)
         setData({
             namePlan: val.name,
             price: val.price,
-            dni: '2344',
-            celular: '32323'
+            dni: persona?.documento,
+            celular: persona?.telefono
         })
     }
 

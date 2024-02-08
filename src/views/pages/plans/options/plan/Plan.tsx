@@ -27,7 +27,9 @@ const Plan: React.FC<PersonalProps> = ({edad = 25, opcion, selectedPlan}) => {
 
     const selectedValor = (plan: Plans) => {
 
-        selectedPlan(plan)
+        selectedPlan({...plan,
+            price: opcion === '1' ? plan.price : (plan.price - plan.price * 0.05)
+        })
 
     }
 
@@ -54,7 +56,7 @@ const Plan: React.FC<PersonalProps> = ({edad = 25, opcion, selectedPlan}) => {
                                     </div>
                                 </div>
                                 <p>Costo del plan</p>
-                                {opcion === '2' && <p><s>$49 antes</s></p>}
+                                {opcion === '2' && <p><s>{`S/${plan.price}` } antes</s></p>}
 
                                 <p>{`S/${opcion === '1' ? plan.price : (plan.price - plan.price * 0.05)} al mes`}</p>
                                 <ul>
