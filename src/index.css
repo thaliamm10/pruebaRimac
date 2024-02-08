@@ -1,13 +1,13 @@
 /*!* Seguro salud Flexible *!*/
 .App {
-    position: relative;
-    /*width: 1360px;*/
-    /*height: 768px;*/
+    /*position: relative;*/
+    /*display: inline-flex;*/
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
 
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
+    min-height: 100vh;
 }
 
 /*.body {*/
@@ -17,8 +17,6 @@
 
 /*!* blur-asset *!*/
 .blur-asset {
-
-
     position: relative;
     backgroundPosition: 'left top';
     left: 0;
@@ -42,27 +40,6 @@
     flex-shrink: 0;
 }
 
-.left-image {
-    background: url('assets/images/blur-asset-purple.png');
-    background-size: cover;
-    background-position: left top;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.right-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: url('assets/images/blur-asset.png');
-    background-size: cover;
-    background-position: right top;
-}
 
 .background-container {
     position: relative;
@@ -81,24 +58,6 @@
     right: 0;
     z-index: 1;
 }
-
-.form-container {
-    position: relative;
-    z-index: 2;
-}
-
-.btn-cotiza {
-    display: flex;
-    width: 336px;
-    padding: 18px 40px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 40px;
-    background: #03050F;
-    color: #FFF;
-}
-
 
 /*!* Rectangle 3463485 *!*/
 .rectangle3463485 {
@@ -166,13 +125,13 @@
 }
 
 /*!* Frame 1000004350 *!*/
-.frame1000004350 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
+/*.app__container {*/
+/*    display: inline-flex;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
 
 
-}
+/*}*/
 
 /*!* Auto layout *!*/
 .hLayer {
@@ -250,33 +209,15 @@
 }
 
 /*!* Hero *!*/
-.hero {
+.app__navigation {
     display: flex;
     align-items: flex-start;
-}
+    /*position: relative;*/
+    /*z-index: 2;*/
 
-/*!* Auto layout *!*/
-.frame1000004308 {
-    display: flex;
-    padding: 32px 0px 48px 120px;
-    align-items: flex-start;
-}
-
-/*!* Frame 1000004298 *!*/
-.frame1000004298 {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-
-    width: 480px;
-    height: 560px;
-
-    border-radius: 15px;
 
 }
+
 
 .image220 {
     position: absolute;
@@ -316,16 +257,7 @@ text, glyph, dark background {
 
 
 /*!* Frame 1000004351 *!*/
-.frame1000004351 {
-    display: flex;
-    padding: 30px 33px 80px 51px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
 
-    position: relative;
-
-}
 
 .blr {
     width: 432px;
@@ -337,83 +269,16 @@ text, glyph, dark background {
 
 
 /*!* Auto layout *!*/
-.frame1000004368 {
-    width: 352px;
-}
 
 /*!* tag-promo *!*/
-.tag-promo {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 8px;
-    gap: 4px;
 
-
-    background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
-    border-radius: 4px;
-    /* label */
-
-    width: 156px;
-    height: 16px;
-
-    /* Component text/comp-14-bold */
-    font-family: 'BR Sonoma';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.4px;
-
-    /* Grey/grey-100 */
-    color: #03050F;
-
-
-}
 
 
 /*!* Creado para ti y tu familia *!*/
-.txtF {
 
-    /*width: 352px;*/
-    /*height: 80px;*/
-
-    /*font-family: 'BR Sonoma';*/
-    /*font-style: normal;*/
-    /*font-weight: 700;*/
-    /*font-size: 32px;*/
-    /*line-height: 40px;*/
-    /*!* or 125% *!*/
-
-    /*!* Grey/grey-100 *!*/
-    /*color: #03050F;*/
-    color: #03050F;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: "BR Sonoma";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 125% */
-}
 
 /*!* Subtitle/subtitle-14 *!*/
-.subtitle-14 {
-    color: #03050F;
-    font-feature-settings: 'clig' off, 'liga' off;
 
-    /* Subtitle/subtitle-14 */
-    font-family: "BR Sonoma";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 142.857% */
-    letter-spacing: 0.2px;
-
-}
 
 /*!* Frame 1000004290 *!*/
 .frame1000004290 {

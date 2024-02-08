@@ -4,13 +4,19 @@ import * as Yup from 'yup';
 import {Card, Row, Form} from "react-bootstrap";
 import usePlansService from "../../../../core/hooks/services/PlansRService";
 import {useNavigate} from "react-router-dom";
+import {
+    CAMPO_CANTIDAD_CARACTERES,
+    CAMPO_NUMERICO,
+    CAMPO_OBLIGATORIO, CAMPO_POLITICA_COMERCIAL,
+    CAMPO_POLITICA_PRIVACIDAD
+} from "../../../../common/constants/Auth.constant";
+import './Login.css'
 
 const Login = () => {
     const navigate = useNavigate();
-
     const {addDataToRedux} = usePlansService();
-
     const [load, setLoad] = useState(false);
+    // Inicialización de campos
     const initialValues = {
         documento: '',
         telefono: '',
@@ -18,24 +24,45 @@ const Login = () => {
         terminos2: false,
 
     };
-    const validationSchema = Yup.object({
-        documento: Yup.string()
-            .required('El documento es obligatorio')
-            .matches(/^[0-9]+$/, 'El documento debe contener solo números')
-            .min(8, 'El documento debe tener 8 caracteres'),
-        telefono: Yup.string()
-            .required('El teléfono es obligatorio')
-            .matches(/^[0-9]+$/, 'El teléfono debe contener solo números')
-            .min(11, 'El teléfono debe tener 11 caracteres'),
-        terminos1: Yup.boolean()
-            .oneOf([true], 'Debe aceptar los términos de Política de Privacidad '),
-        terminos2: Yup.boolean()
-            .oneOf([true], 'Debe aceptar los términos de Política Comunicaciones Comerciales'),
-    });
+    // Validación de campos
+    const validationSchema =
+        Yup.object({
+            documento: Yup.string()
+                .required(CAMPO_OBLIGATORIO)
+                .matches(/^[0-9]+$/, CAMPO_NUMERICO)
+                .min(8, ` ${CAMPO_CANTIDAD_CARACTERES} 8 dígitos`),
+            telefono: Yup.string()
+                .required(CAMPO_OBLIGATORIO)
+                .matches(/^[0-9]+$/, CAMPO_NUMERICO)
+                .min(11, ` ${CAMPO_CANTIDAD_CARACTERES} 11 dígitos`),
+            terminos1: Yup.boolean()
+                .oneOf([true], CAMPO_POLITICA_PRIVACIDAD),
+            terminos2: Yup.boolean()
+                .oneOf([true], CAMPO_POLITICA_COMERCIAL),
+        });
+
+    // Cambia clase de Estilos de campos según validación
     const getValidationClass = (touched: boolean | undefined, error: string | undefined) => (touched && error ? 'is-invalid' : '');
 
+    // Metodo para guardar campos
     const handleSubmit = (values: any) => {
         handleAddData(values)
+    };
+    const handleAddData = (row: any) => {
+        setLoad(true);
+        const newData = {
+            ...row
+        };
+
+        try {
+            startTransition(() => {
+                addDataToRedux(newData);
+                setLoad(false);
+                navigate("/plans");
+            });
+        } catch (error) {
+            navigate("/error", {state: {message: "Error"}});
+        }
     };
 
     const formik = useFormik({
@@ -43,45 +70,13 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: validationSchema,
         onSubmit: values => {
-            setLoad(true);
-            handleSubmit({
-                ...values
-            });
+
         },
     });
 
 
-    /**
-     * Agrega datos
-     */
-    // const handleAddData = (row: any) => {
-    //     const newData = {
-    //         ...row
-    //     };
-    //     try {
-    //         addDataToRedux(newData);
-    //         navigate("/plans");
-    //     } catch (error) {
-    //         navigate("/error", {state: {message: "Error"}});
-    //     }
-    // };
-    const handleAddData = (row: any) => {
-            const newData = {
-                ...row
-            };
-
-            try {
-                startTransition(() => {
-                    addDataToRedux(newData);
-                    navigate("/plans");
-                });
-            } catch (error) {
-                navigate("/error", {state: {message: "Error"}});
-            }
-        };
-
     return (
-        <div className={'frame1000004351'}>
+        <div>
             <div className={'frame1000004368'}>
                 <span className={'tag-promo'}>Seguro Salud Flexible</span>
                 <p className={'txtF'}>Creado para ti y tu familia</p>
@@ -94,7 +89,6 @@ const Login = () => {
                         {/*<div className={'frame1000004290'}>*/}
                         <div className="row">
                             <div className="col-6">
-
                                 <div className="row">
                                     <div className="col-12 mb-2">
                                         <Form.Group controlId="documento">

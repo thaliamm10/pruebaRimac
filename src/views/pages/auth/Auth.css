@@ -1,0 +1,54 @@
+
+.left-image {
+    background: url('../../../assets/images/blur-asset-purple.png');
+    background-size: cover;
+    background-position: left top;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../../../assets/images/blur-asset.png');
+    background-size: cover;
+    background-position: right top;
+}
+
+/*!* Auto layout *!*/
+.section1 {
+    display: flex;
+    padding: 32px 0px 48px 120px;
+    /*align-items: flex-start;*/
+}
+
+/*!* Frame 1000004298 *!*/
+.section1__img {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 480px;
+    height: 560px;
+    border-radius: 15px;
+
+}
+
+.section2 {
+    display: flex;
+    padding: 30px 33px 80px 51px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    position: relative;
+
+}

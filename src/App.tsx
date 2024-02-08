@@ -11,15 +11,26 @@ function App() {
     return (
         <Provider store={store}>
 
+            {/*<div className="App">*/}
+            {/*    <body>*/}
+            {/*    <Header/>*/}
+            {/*    <main className="container">*/}
+            {/*    <div className={'app__navigation'}>*/}
+            {/*        <Navigation/>*/}
+            {/*    </div>*/}
+            {/*    </main>*/}
+            {/*    <Footer/>*/}
+            {/*    </body>*/}
+
+            {/*</div>*/}
+
             <div className="App">
-                <body>
-                <div className={'frame1000004350'}>
-                    <Header/>
-                    <div className={'hero form-container'}>
-                        <Navigation/>
-                    </div>
-                </div>
-                </body>
+                <Header/>
+
+                <main className="container-fluid">
+                    <Navigation/>
+                </main>
+
                 <Footer/>
             </div>
         </Provider>
