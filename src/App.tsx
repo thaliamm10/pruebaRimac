@@ -15,7 +15,6 @@ function App() {
                 <main className="container-fluid">
                     <Navigation/>
                 </main>
-
                 <Footer/>
             </div>
         </Provider>

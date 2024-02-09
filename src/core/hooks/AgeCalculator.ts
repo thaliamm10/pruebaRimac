@@ -8,7 +8,6 @@ const useAgeCalculator = (birthDate: string): number  => {
             setAge(0);
             return;
         }
-
         const birthdayDate = new Date(birthDate);
         const today = new Date();
         const yearsDiff = today.getFullYear() - birthdayDate.getFullYear();

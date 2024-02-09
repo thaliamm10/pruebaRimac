@@ -11,7 +11,6 @@ const Navigation = () => {
     return (
         <BrowserRouter>
                 <Routes>
-
                     <Route path="login"  element={<Auth/>}></Route>
                     <Route path="plans"  element={<Plans/>}></Route>
                     <Route path="sumary"  element={<Sumary/>}></Route>
