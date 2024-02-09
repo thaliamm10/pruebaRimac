@@ -5,6 +5,8 @@ import imgMore from "../../../../../assets/images/IcAddUserLight.png";
 import Plan from "../plan/Plan";
 import {useFormik} from "formik";
 import * as Yup from "yup";
+import useUserService from "../../../../../core/services/UserService";
+import useAgeCalculator from "../../../../../core/hooks/AgeCalculator";
 
 interface UserDetail {
     name: string;
@@ -16,9 +18,9 @@ interface PersonalProps {
 }
 
 const
-    Price : React.FC<PersonalProps> = ({priceSelect}) => {
-    const userDetail: UserDetail = require('../../../../../assets/json/user.json');
-
+    Option : React.FC<PersonalProps> = ({priceSelect}) => {
+    const {name: firstName,birthDay}: any = useUserService();
+    const edad = useAgeCalculator(birthDay);
     const initialValues = {
         opcionC: ''
 
@@ -38,16 +40,14 @@ const
         initialValues: initialValues,
         validationSchema: validationSchema,
         onSubmit: values => {
-            // handleSubmit({
-            //     ...values
-            // });
+
         },
     });
     return (
         <>
             <div className="row justify-content-center align-content-center">
                 <div className="col-12">
-                    <p className={'txt-principal'}>{userDetail.name} ¿Para quién deseas cotizar?</p>
+                    <p className={'txt-principal'}>{firstName} ¿Para quién deseas cotizar?</p>
                     <p className={'txt-principal2'}>Selecciona opción que se ajuste más a tus necesidades</p>
                 </div>
                 <div className="col-3 col-offset-3">
@@ -108,11 +108,11 @@ const
             </div>
 
             {formik.values?.opcionC && (
-                <Plan edad={25} opcion={formik.values.opcionC} selectedPlan={seleccionarValor} />
+                <Plan edad={edad} opcion={formik.values.opcionC} selectedPlan={seleccionarValor} />
             )}
 
         </>
     );
 };
 
-export default Price;
+export default Option;

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Card} from "react-bootstrap";
 import imgH from "../../../../../assets/images/IcHospitalLight.png";
-
+import usePlansService from "../../../../../core/services/PlansService";
 
 interface Plans {
     name: string,
@@ -16,27 +16,31 @@ interface PersonalProps {
     selectedPlan: (nuevoValor: Plans) => void;
 }
 
-const Plan: React.FC<PersonalProps> = ({edad = 25, opcion, selectedPlan}) => {
+
+const Plan: React.FC<PersonalProps> = ({edad=0,opcion, selectedPlan}) => {
 
     const [plan, setPlan] = useState([])
-    const dt: any = require('../../../../../assets/json/plans.json');
+    const dt: Plans[] = usePlansService();
+
+
     const cargarPlans = () => {
-        let data = dt.list.filter((item: { age: number; }) => item.age > edad)
+        let data = dt.filter((item: { age: number; }) => item.age > edad)
+        // @ts-ignore
         setPlan(data)
     }
 
     const selectedValor = (plan: Plans) => {
-
-        selectedPlan({...plan,
+        selectedPlan({
+            ...plan,
             price: opcion === '1' ? plan.price : (plan.price - plan.price * 0.05)
         })
-
     }
 
-
     useEffect(() => {
-        cargarPlans()
-    }, [])
+        if (dt.length > 0)
+            cargarPlans()
+    }, [dt.length > 0])
+
 
     return (
         <div className="row justify-content-center align-content-center planes-v">
@@ -56,8 +60,7 @@ const Plan: React.FC<PersonalProps> = ({edad = 25, opcion, selectedPlan}) => {
                                     </div>
                                 </div>
                                 <p>Costo del plan</p>
-                                {opcion === '2' && <p><s>{`S/${plan.price}` } antes</s></p>}
-
+                                {opcion === '2' && <p><s>{`S/${plan.price}`} antes</s></p>}
                                 <p>{`S/${opcion === '1' ? plan.price : (plan.price - plan.price * 0.05)} al mes`}</p>
                                 <ul>
                                     {plan.description.map((item, i) => (

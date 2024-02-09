@@ -2,15 +2,16 @@ import React, {useState} from 'react';
 import Step from "../../../common/components/step/Step";
 import './Plans.css';
 import {Row} from "react-bootstrap";
-import Price from "./options/price/Price";
+import Option from "./options/option/Option";
 import Summary from "./options/summary/Summary";
 import {useSelector} from 'react-redux';
+import useUserService from "../../../core/services/UserService";
 
 const Plans: React.FC<any> = () => {
     const [option, setOption] = useState(0)
     const [data, setData] = useState({})
     const datosPersona = useSelector((state: any) => state.data);
-
+    const {name: firstName, lastName: lastName, birthDay}: any = useUserService();
 
     const [steps, setSteps] = useState([
         {step: 1, label: 'Planes y coberturas         ....', isActive: true, isCompleted: false},
@@ -30,13 +31,12 @@ const Plans: React.FC<any> = () => {
     };
 
     const selectPrice = (val: any) => {
-        console.log()
         const persona = datosPersona.data[0];
-
         setOption(1)
         setData({
             namePlan: val.name,
             price: val.price,
+            name: `${firstName} ${lastName}`,
             dni: persona?.documento,
             celular: persona?.telefono
         })
@@ -45,27 +45,24 @@ const Plans: React.FC<any> = () => {
 
     return (
         <>
-            <Row>
-                <div className="step-container">
-                    {steps.map((step, index) => (
-                        <Step
-                            key={index}
-                            step={step.step}
-                            label={step.label}
-                            isActive={step.isActive}
-                            isCompleted={step.isCompleted}
-                            onClick={() => handleStepClick(index)}
-                        />
-                    ))}
-                </div>
+            <div className="step-container">
+                {steps.map((step, index) => (
+                    <Step
+                        key={index}
+                        step={step.step}
+                        label={step.label}
+                        isActive={step.isActive}
+                        isCompleted={step.isCompleted}
+                        onClick={() => handleStepClick(index)}
+                    />
+                ))}
+            </div>
 
-                {(option === 0) ? (<>
-                    <Price priceSelect={selectPrice}/>
-                </>) : (option === 1) ? (<>
-                    <Summary datos={data}/>
-                </>) : (<></>)}
-            </Row>
-
+            {(option === 0) ? (<>
+                <Option priceSelect={selectPrice}/>
+            </>) : (option === 1) ? (<>
+                <Summary datos={data}/>
+            </>) : (<></>)}
         </>);
 };
 

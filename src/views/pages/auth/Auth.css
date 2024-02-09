@@ -23,23 +23,32 @@
 
 /*!* Auto layout *!*/
 .section1 {
-    display: flex;
-    padding: 32px 0px 48px 120px;
-    /*align-items: flex-start;*/
+    text-align: center;
+    align-items: flex-start;
+    /*padding: 32px 0px 48px 120px;*/
 }
 
-/*!* Frame 1000004298 *!*/
-.section1__img {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-    width: 480px;
-    height: 560px;
-    border-radius: 15px;
 
+.hidden {
+    overflow: hidden;
+}
+
+@media (min-width: 1500px) {
+    .section1__img {
+        border-radius: 15px;
+
+    }
+}
+
+@media (max-width: 1500px) {
+    .hidden {
+        display: none;
+    }
+    .section1__img {
+        border-radius: 15px;
+        max-height: 50%;
+
+    }
 }
 
 .section2 {
@@ -50,5 +59,54 @@
     gap: 24px;
 
     position: relative;
+
+}
+.section2__content {
+    width: 80%;
+}
+
+
+.section2__content__tag {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 4px;
+    background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
+    border-radius: 4px;
+    width: 156px;
+    height: 16px;
+    font-family: 'BR Sonoma';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+    color: #03050F;
+}
+
+.section2__content__txt1 {
+    color: #03050F;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "BR Sonoma";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+}
+.section2__content__txt2 {
+    color: #03050F;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Subtitle/subtitle-14 */
+    font-family: "BR Sonoma";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
 
 }

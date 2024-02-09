@@ -8,18 +8,16 @@ const Summary: React.FC<SumaryProps> = ({datos}) => {
 
     return (
         <>
-            <Row>
+            {/*<Row>*/}
                 <div className="row justify-content-center align-content-center">
 
                     <div className="col-8">
                         <p className={'resumen-seguro'}>Resumen del seguro</p>
-                        <Card style={{width: '18rem'}} className={'card-cotiza'}>
-                            <Card.Header>
-                                <p className={'precio'}>PRECIOS CALCULADOS PARA:</p>
-                                <i className={'fa fa-users'}></i> Rocio
-                            </Card.Header>
+                        <Card style={{width: '20rem'}} className={'card-cotiza'}>
                             <Card.Body>
-
+                                <p>PRECIOS CALCULADOS PARA:</p>
+                                <i className={'fa fa-users'}></i> {datos.name}
+                                <hr/>
                                 <h5>Responsable de pago</h5>
                                 <p>DNI:{datos.dni}</p>
                                 <p>Celular:{datos.celular}</p>
@@ -33,7 +31,7 @@ const Summary: React.FC<SumaryProps> = ({datos}) => {
                     </div>
 
                 </div>
-            </Row>
+            {/*</Row>*/}
         </>
     );
 };

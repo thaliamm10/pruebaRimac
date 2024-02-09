@@ -134,7 +134,7 @@
 /*}*/
 
 /*!* Auto layout *!*/
-.hLayer {
+.sectioHeader {
     display: flex;
     width: 100%;
     padding: 2px 120px;
@@ -162,7 +162,7 @@
     height: 36px;
 }
 
-.frame1000004289 {
+.sectioHeader__right {
     display: flex;
     padding: 20px 0px;
     align-items: center;
@@ -543,8 +543,6 @@ text, glyph, dark background
 .precio{
     color: #141938;
     font-feature-settings: 'clig' off, 'liga' off;
-
-    /* Web/Title/Headline22_Upper_Black */
     font-family: Lato;
     font-size: 10px;
     font-style: normal;

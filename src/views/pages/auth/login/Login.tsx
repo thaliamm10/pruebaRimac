@@ -1,8 +1,8 @@
 import React, {startTransition, useState} from 'react';
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
-import {Card, Row, Form} from "react-bootstrap";
-import usePlansService from "../../../../core/hooks/services/PlansRService";
+import {Card, Form, InputGroup} from "react-bootstrap";
+import usePlansService from "../../../../core/services/PlansRService";
 import {useNavigate} from "react-router-dom";
 import {
     CAMPO_CANTIDAD_CARACTERES,
@@ -18,6 +18,7 @@ const Login = () => {
     const [load, setLoad] = useState(false);
     // Inicialización de campos
     const initialValues = {
+        tipoDocumento:'DNI',
         documento: '',
         telefono: '',
         terminos1: false,
@@ -34,7 +35,7 @@ const Login = () => {
             telefono: Yup.string()
                 .required(CAMPO_OBLIGATORIO)
                 .matches(/^[0-9]+$/, CAMPO_NUMERICO)
-                .min(11, ` ${CAMPO_CANTIDAD_CARACTERES} 11 dígitos`),
+                .min(9, ` ${CAMPO_CANTIDAD_CARACTERES} 9 dígitos`),
             terminos1: Yup.boolean()
                 .oneOf([true], CAMPO_POLITICA_PRIVACIDAD),
             terminos2: Yup.boolean()
@@ -46,12 +47,9 @@ const Login = () => {
 
     // Metodo para guardar campos
     const handleSubmit = (values: any) => {
-        handleAddData(values)
-    };
-    const handleAddData = (row: any) => {
         setLoad(true);
         const newData = {
-            ...row
+            ...values
         };
 
         try {
@@ -64,6 +62,7 @@ const Login = () => {
             navigate("/error", {state: {message: "Error"}});
         }
     };
+
 
     const formik = useFormik({
         enableReinitialize: true,
@@ -78,48 +77,57 @@ const Login = () => {
 
 
     return (
-        <div>
-            <div className={'frame1000004368'}>
-                <span className={'tag-promo'}>Seguro Salud Flexible</span>
-                <p className={'txtF'}>Creado para ti y tu familia</p>
-                <p className={'subtitle-14'}>Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra
-                    asesoría. 100% online.</p>
-            </div>
-            <Row>
-                <Card.Body>
-                    <form>
-                        {/*<div className={'frame1000004290'}>*/}
-                        <div className="row">
-                            <div className="col-6">
-                                <div className="row">
+        <div className={''}>
+            <Card.Body>
+                <form>
+                    <div className="row">
+                        <div className="col-6">
+                            <div className="row">
+                                <div className={'lsection1 col-12'}>
+                                    {/*Documento*/}
                                     <div className="col-12 mb-2">
                                         <Form.Group controlId="documento">
-                                            <Form.Label>Documento:</Form.Label>
-                                            <Form.Control
-                                                type="text"
-                                                name="documento"
-                                                onChange={formik.handleChange}
-                                                onBlur={formik.handleBlur}
-                                                value={formik.values.documento}
-                                                maxLength={8}
-                                                className={getValidationClass(formik.touched.documento, formik.errors.documento)}
-                                            />
-                                            {formik.touched.documento && formik.errors.documento && (
-                                                <Form.Control.Feedback
-                                                    type="invalid">{formik.errors.documento}</Form.Control.Feedback>
+                                            <InputGroup>
+                                                <Form.Select
+                                                    as="select"
+                                                    name="tipoDocumento"
+                                                    onChange={formik.handleChange}
+                                                    onBlur={formik.handleBlur}
+                                                    value={formik.values.tipoDocumento}
+                                                    className={getValidationClass(formik.touched.tipoDocumento, formik.errors.tipoDocumento)}
+                                                >
+                                                    <option value="DNI">DNI</option>
+                                                    <option value="Pasaporte">PASAPORTE</option>
+                                                </Form.Select>
+                                                <Form.Control
+                                                    type="text"
+                                                    name="documento"
+                                                    onChange={formik.handleChange}
+                                                    onBlur={formik.handleBlur}
+                                                    value={formik.values.documento}
+                                                    maxLength={8} // Ajustar la longitud máxima según sea necesario
+                                                    className={getValidationClass(formik.touched.documento, formik.errors.documento)}
+                                                />
+                                            </InputGroup>
+                                            {(formik.touched.tipoDocumento || formik.touched.documento) && (formik.errors.tipoDocumento || formik.errors.documento) && (
+                                                <Form.Control.Feedback type="invalid">
+                                                    {formik.errors.tipoDocumento || formik.errors.documento}
+                                                </Form.Control.Feedback>
                                             )}
                                         </Form.Group>
+
                                     </div>
+                                    {/*Celular*/}
                                     <div className="col-12">
                                         <Form.Group controlId="telefono">
-                                            <Form.Label>Teléfono:</Form.Label>
                                             <Form.Control
                                                 type="text"
                                                 name="telefono"
                                                 onChange={formik.handleChange}
                                                 onBlur={formik.handleBlur}
                                                 value={formik.values.telefono}
-                                                maxLength={11}
+                                                maxLength={9}
+                                                placeholder={'Celular'}
                                                 className={getValidationClass(formik.touched.telefono, formik.errors.telefono)}
                                             />
                                             {formik.touched.telefono && formik.errors.telefono && (
@@ -128,13 +136,9 @@ const Login = () => {
                                             )}
                                         </Form.Group>
                                     </div>
-                                    <br/>
-                                    <br/>
-                                    <br/>
-                                    <br/>
-                                    <br/>
-                                    <br/>
-
+                                </div>
+                                <div className={'lsection2 col-12'}>
+                                    {/*Terminos privacidad*/}
                                     <div className="col-12">
                                         <Form.Group controlId="terminos1">
                                             <Form.Check
@@ -152,6 +156,7 @@ const Login = () => {
                                             )}
                                         </Form.Group>
                                     </div>
+                                    {/*Terminos comerciales*/}
                                     <div className="col-12">
                                         <Form.Group controlId="terminos2">
                                             <Form.Check
@@ -170,37 +175,37 @@ const Login = () => {
                                         </Form.Group>
                                     </div>
 
-                                    <label>Aplican Términos y Condiciones.</label>
+                                    <span className={'lsection2__span'}>Aplican Términos y Condiciones.</span>
+                                </div>
 
-                                    <div>
-                                        {load ? (<button type="button"
-                                                         disabled={true}
-                                                         className={'btn-cotiza'}
 
-                                        >Un momento por favor...
-                                        </button>) : (
-                                            <button
-                                                type="submit"
-                                                className={'btn-cotiza'}
-                                                onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                                                    e.preventDefault();
-                                                    // @ts-ignore
-                                                    formik.handleSubmit(e);
-                                                }}
-                                            >
-                                                Cotiza aquí
-                                            </button>
-                                        )}
+                                <div>
+                                    {load ? (<button type="button"
+                                                     disabled={true}
+                                                     className={'btn-cotiza'}
 
-                                    </div>
+                                    >Un momento por favor...
+                                    </button>) : (
+                                        <button
+                                            type="submit"
+                                            className={'btn-cotiza'}
+                                            onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                                                e.preventDefault();
+                                                // @ts-ignore
+                                                formik.handleSubmit(e);
+                                            }}
+                                        >
+                                            Cotiza aquí
+                                        </button>
+                                    )}
+
                                 </div>
                             </div>
                         </div>
-                        {/*</div>*/}
-                    </form>
-                </Card.Body>
-            </Row>
-
+                    </div>
+                    {/*</div>*/}
+                </form>
+            </Card.Body>
         </div>
 
     );

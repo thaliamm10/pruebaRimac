@@ -1,74 +1,4 @@
-.frame1000004368 {
-    width: 352px;
-}
-.tag-promo {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 8px;
-    gap: 4px;
 
-
-    background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
-    border-radius: 4px;
-    /* label */
-
-    width: 156px;
-    height: 16px;
-
-    /* Component text/comp-14-bold */
-    font-family: 'BR Sonoma';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.4px;
-
-    /* Grey/grey-100 */
-    color: #03050F;
-
-
-}
-.txtF {
-
-    /*width: 352px;*/
-    /*height: 80px;*/
-
-    /*font-family: 'BR Sonoma';*/
-    /*font-style: normal;*/
-    /*font-weight: 700;*/
-    /*font-size: 32px;*/
-    /*line-height: 40px;*/
-    /*!* or 125% *!*/
-
-    /*!* Grey/grey-100 *!*/
-    /*color: #03050F;*/
-    color: #03050F;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: "BR Sonoma";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 125% */
-}
-
-.subtitle-14 {
-    color: #03050F;
-    font-feature-settings: 'clig' off, 'liga' off;
-
-    /* Subtitle/subtitle-14 */
-    font-family: "BR Sonoma";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 142.857% */
-    letter-spacing: 0.2px;
-
-}
 .btn-cotiza {
     display: flex;
     width: 336px;
@@ -79,4 +9,64 @@
     border-radius: 40px;
     background: #03050F;
     color: #FFF;
+}
+
+.lsection1 {
+    margin-top: 10%;
+    margin-bottom: 40%;
+}
+.lsection2{
+    margin-bottom: 10%;
+}
+.lsection2__span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.form-control {
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.select-control {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #495057;
+}
+
+.select-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.invalid-feedback {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #dc3545;
 }

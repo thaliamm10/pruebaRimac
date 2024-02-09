@@ -11,7 +11,7 @@ function App() {
     return (
         <Provider store={store}>
             <div className="App">
-                <Header/>git
+                <Header/>
                 <main className="container-fluid">
                     <Navigation/>
                 </main>
